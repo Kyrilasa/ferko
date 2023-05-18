@@ -1,0 +1,187 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="undefined"><!-- InstanceBegin template="/Templates/sablon.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<SCRIPT LANGUAGE="JavaScript1.1">
+<!--
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+<script src="script.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Nyitólap</title>
+<!-- InstanceEndEditable -->
+<link href="style.css" rel="stylesheet" type="text/css">
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+a:link {
+	text-decoration: none;
+	color: #FF0000;
+}
+a:visited {
+	text-decoration: none;
+	color: #FF0000;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+#Layer1 {
+	position:absolute;
+	width:335px;
+	height:480px;
+	z-index:1;
+	left: 240px;
+	top: 130px;
+}
+#Layer2 {
+	position:absolute;
+	width:338px;
+	height:487px;
+	z-index:1;
+	overflow: visible;
+}
+-->
+</style></head>
+<body bgcolor="#FFFFFF" onLoad="MM_preloadImages('images/nyitolap_2.gif','images/alapismeretek_2.gif','images/lagyszaruak_2.gif','images/fasszaruak_2.gif','images/novenyhaziak_2.gif','images/tablazatok_2.gif','images/nevmutatok_2.gif','images/fogalomtar_2.gif','images/onellenorzes_2.gif','images/kilepes_2.gif','images/vissza_2.gif')">
+<div class="menu_layer" id="menu">
+  <table border="0" cellpadding="0" cellspacing="10" background="images/menuback.jpg">
+    <tr>
+      <td><a href="nyitolap.html" target="_top" onClick="MM_nbGroup('down','group1','nyitolap','images/nyitolap_2.gif',1)" onMouseOver="MM_nbGroup('over','nyitolap','images/nyitolap_2.gif','images/nyitolap_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="nyitolap" src="images/nyitolap_1.gif" border="0" alt="Nyitólap" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="HTML/alapismeretek/alapismeretek.html" target="_top" onClick="MM_nbGroup('down','group1','Alapismeretek','images/alapismeretek_2.gif',1)" onMouseOver="MM_nbGroup('over','Alapismeretek','images/alapismeretek_2.gif','images/alapismeretek_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img src="images/alapismeretek_1.gif" alt="alapismeretek" name="Alapismeretek" border="0" onload=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="HTML/lagyszaruak/lagyszaruak.html" target="_top" onClick="MM_nbGroup('down','group1','lagyszaruak','images/lagyszaruak_2.gif',1)" onMouseOver="MM_nbGroup('over','lagyszaruak','images/lagyszaruak_2.gif','images/lagyszaruak_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="lagyszaruak" src="images/lagyszaruak_1.gif" border="0" alt="Lágyszárúak" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="HTML/fasszaruak/fasszaruak.html" target="_top" onClick="MM_nbGroup('down','group1','fasszaruak','images/fasszaruak_2.gif',1)" onMouseOver="MM_nbGroup('over','fasszaruak','images/fasszaruak_2.gif','images/fasszaruak_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="fasszaruak" src="images/fasszaruak_1.gif" border="0" alt="Fásszárúak" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="HTML/novenyhaziak/novenyhaziak.html" target="_top" onClick="MM_nbGroup('down','group1','novenyhaziak','images/novenyhaziak_2.gif',1)" onMouseOver="MM_nbGroup('over','novenyhaziak','images/novenyhaziak_2.gif','images/novenyhaziak_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="novenyhaziak" src="images/novenyhaziak_1.gif" border="0" alt="Nyövényháziak" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="HTML/tablazatok/tablazatok.html" target="_top" onClick="MM_nbGroup('down','group1','tablazatok','images/tablazatok_2.gif',1)" onMouseOver="MM_nbGroup('over','tablazatok','images/tablazatok_2.gif','images/tablazatok_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="tablazatok" src="images/tablazatok_1.gif" border="0" alt="Táblázatok" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="HTML/nevmutato/nevmutato.html" target="_top" onClick="MM_nbGroup('down','group1','nevmutatok','images/nevmutatok_2.gif',1)" onMouseOver="MM_nbGroup('over','nevmutatok','images/nevmutatok_2.gif','images/nevmutatok_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="nevmutatok" src="images/nevmutatok_1.gif" border="0" alt="Névmutatók" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="HTML/fogalomtar.html" target="_top" onClick="MM_nbGroup('down','group1','fogalomtar','images/fogalomtar_2.gif',1)" onMouseOver="MM_nbGroup('over','fogalomtar','images/fogalomtar_2.gif','images/fogalomtar_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="fogalomtar" src="images/fogalomtar_1.gif" border="0" alt="Fogalomtár" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="teszt/onellenorzes.html" target="_top" onClick="MM_nbGroup('down','group1','onellenorzes','images/onellenorzes_2.gif',1)" onMouseOver="MM_nbGroup('over','onellenorzes','images/onellenorzes_2.gif','images/onellenorzes_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="onellenorzes" src="images/onellenorzes_1.gif" border="0" alt="Önellenõrzés" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="javascript:window.close()" target="_top" onClick="MM_nbGroup('down','group1','kilepes','images/kilepes_2.gif',1)" onMouseOver="MM_nbGroup('over','kilepes','images/kilepes_2.gif','images/kilepes_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="kilepes" src="images/kilepes_1.gif" border="0" alt="" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="javascript:history.go(-1)" target="_top" onClick="MM_nbGroup('down','group1','vissza','images/vissza_2.gif',1)" onMouseOver="MM_nbGroup('over','vissza','images/vissza_2.gif','images/vissza_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="vissza" src="images/vissza_1.gif" border="0" alt="vissza" onLoad=""></a></td>
+    </tr>
+  </table>
+</div>
+<div class="top_layer" id="top">
+  <div align="center"><img src="images/fejlec.jpg" alt="fejlec" width="781" height="79"></div>
+</div>
+<div class="text_layer" id="text" scrolling="no"><!-- InstanceBeginEditable name="text" -->
+<p align="justify">Ez a CD több  évtizedes szakmai és oktató munkánk közös eredménye. A dísznövénykertész  szakképesítés dísznövénytermesztés tantárgy anyagának minél jobb megismeréséhez  szeretnénk sokoldalú segítséget nyújtani. A CD jól alkalmazható az otthoni, önálló  tanuláshoz, de tanítási órákon is segítséget nyújt a tananyag elsajátításához a  képek és a táblázatok segítségével.</p>
+<div align="justify">A CD-n az egyes  fejezetekben megtalálhatók az alapvetõ szakmai ismeretek, a színes képek, ábrák  pedig segítik a megfelelõ szintû tanulást. A 400 tananyag növény  megismerését mintegy 2000 színes kép és ábra szemlélteti, emellett önellenõrzõ  tesztek (kb. 1400 db) is biztosítják a tananyag alapos elsajátítását, és  visszajelzést adnak a hiányosságokra. A névmutatók (latin és magyar nevek  alapján) a növények visszakeresését, a növényismereti listában közölt fonetikus  írásmód a növénynevek helyes kiejtését, valamint a növényismeret gyakorlását  segítik. Az összefoglaló táblázatok a lényeges adatok memorizálását, vizuális  megjelenítését szolgálják.
+</div>
+<p align="justify">A CD készítéséhez Dr. Orlóci  László: Dísznövénytermesztés I. és II. (Agrárszakoktatási Intézet, Budapest,  1999-2000.) c. tankönyvek szövegét használtuk fel, a CD sajátosságainak  megfelelõen átalakítva, kiegészítve egyéb hasznos információkkal és saját  készítésû digitális fotókkal. <br>
+  Kérjük, hogy elõször  tanulmányozza át a használati útmutatót, és az utasításoknak megfelelõen járjon  el.</p>
+<p>Jó tanulást kívánnak a  Szerzõk:</p>
+<p align="right">Elekné Ludányi Zsuzsanna és dr. Orlóci László<strong> </strong></p>
+<p><strong>Használati útmutató:</strong></p>
+<p align="justify">A CD kezelése  rendkívül egyszerû. <br>
+  A bal szélen  található menü segítségével lehet elindulni a különbözõ anyagrészek között. <br>
+  Az egyik oldalról ún. linkekre kattintva lehet a másik oldalra átjutni. A  linkek színes betûkkel írt szavak,  mondatrészek. Ezek fölé kell vinni a kurzort, ekkor a nyíl átváltozik egy kis  nyújtott mutató ujjas kézfejjé. A jelre rákattintva megjelenik a kívánt  anyagrész vagy kép. <br>
+  Az egér bal  gombjával rákattintva</p>
+<div align="justify">
+  <ol>
+    <li>a bal oldali  gombok valamelyikére vagy a zöld szövegrészekre,  az egyes alfejezetekbe, a tananyag részeire lehet bejutni,</li>
+    <li>a piros színû szövegrekattintva újabb szövegrészek, kiegészítõ  információk elérése válik lehetõvé, illetve képet vagy ábrát jeleníthetünk  meg,</li>
+    <li>vissza<strong> </strong>gombra lehet visszajutni az elõzõ oldalra.</li>
+  </ol>
+</div>
+<ol>
+</ol>
+<p><strong>A CD fejezetei:</strong></p>
+<ol>
+  <li>Alapismeretek</li>
+  <li>Dísznövénycsoportok:</li>
+</ol>
+<p>Lágyszárú dísznövények<br>
+  Fásszárú dísznövények<br>
+  Növényházi dísznövények</p>
+<ol>
+  <li>Táblázatok</li>
+  <li>Névmutatók</li>
+  <li>Fogalomtár</li>
+  <li>Önellenõrzés</li>
+</ol>
+<p align="justify">A tananyag  dísznövények bemutatása azonos szerkezetben történik. <br>
+  A <strong>jellemzésben</strong> a növény leírása, fajtái találhatók meg. <br>
+  A <strong>termesztés</strong> címszó a szaporításmód és nevelés mellett a termesztési igények és a  kórokozók, kártevõk, növénybetegségek ismertetésére is kitér. <br>
+  Az <strong>egyéb információkban</strong> a növény származására, szinonim nevére, a  név jelentésére, esetleges mérgezõ hatására, valamint a felhasználási  lehetõségeire kap útmutatást a CD használója.</p>
+<p align="justify">Az <strong>önellenõrzõ </strong><strong>tesztek</strong> megoldása során a megfelelõ helyre vagy helyekre, majd a „Kész” gombra  kattintva, megjelenik, hogy helyes volt-e a válasz, és ha nem, akkor mi lett  volna a tökéletes megoldás. Legtöbb helyen csak egy megfelelõ választ kell  megjelölni, de vannak többválasztásos feladatok is. Ha egy teszten belül több  jó válasz van, a „helyes megoldás” csak a tejesen hibátlan válasz esetén  jelenik meg. Egyszerre 20 kérdést választ ki a gép, majd értékeli a  teljesítményt. A tesztkérdések az egyes témakörökben véletlenszerûen jelennek  meg, így elõfordulhat, hogy egy kérdés többször, vagy gyakrabban elõfordul. A  kérdések nagy száma (témakörönként 50-160 kérdés) biztosítja, hogy alaposan  megismerhesse tudásszintjét. </p>
+<p align="justify">A <strong>névmutatókban </strong>a latin és a magyar növénynevek abc  sorrendben vannak feltüntetve. A latin névre kattintva a megfelelõ  szövegrészhez lehet ugrani. </p>
+<p align="justify">A <strong>növényismereti  listában</strong> pedig a növény fényképe jelenik meg, így lehetséges a  növényismeret gyakorlása. A helyes kiejtés gyakorlásában segít, hogy a nevek  kiejtés szerint (fonetikusan) is leírásra kerültek.</p>
+<p align="justify">Az összefoglalást  segítõ <strong>táblázatokban</strong> együtt láthatók a növények legfontosabb  tulajdonságai, amely lehetõvé teszi az összehasonlításukat, az adatok vizuális  megjelenését.</p>
+<p align="justify">A <strong>fogalomtárban</strong> abc sorrendben találhatók meg azok  az idegen nyelvû (többnyire latin) szakkifejezések, amelyek a tananyagban  elõfordulnak.</p>
+<p>A <strong>fogalomtárban</strong> abc sorrendben találhatók meg azok  az idegen nyelvû (többnyire latin) szakkifejezések, amelyek a tananyagban </p>
+<!-- InstanceEndEditable --></div>
+<img src="images/kszi.gif" alt="logo" width="120" height="82">
+</body>
+<!-- InstanceEnd --></html>

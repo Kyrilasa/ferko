@@ -1,0 +1,3 @@
+[autorun]
+open=shell.exe nyitolap.html
+icon=icon.ico

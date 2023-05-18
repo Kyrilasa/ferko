@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="undefined"><!-- InstanceBegin template="/Templates/sablon.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<SCRIPT LANGUAGE="JavaScript1.1">
+<!--
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+<script src="../../script.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>A dísznövénytermesztés kialakulása</title>
+<!-- InstanceEndEditable -->
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+a:link {
+	text-decoration: none;
+	color: #FF0000;
+}
+a:visited {
+	text-decoration: none;
+	color: #FF0000;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+#Layer1 {
+	position:absolute;
+	width:335px;
+	height:480px;
+	z-index:1;
+	left: 240px;
+	top: 130px;
+}
+#Layer2 {
+	position:absolute;
+	width:338px;
+	height:487px;
+	z-index:1;
+	overflow: visible;
+}
+-->
+</style></head>
+<body bgcolor="#FFFFFF" onLoad="MM_preloadImages('../../images/nyitolap_2.gif','../../images/alapismeretek_2.gif','../../images/lagyszaruak_2.gif','../../images/fasszaruak_2.gif','../../images/novenyhaziak_2.gif','../../images/tablazatok_2.gif','../../images/nevmutatok_2.gif','../../images/fogalomtar_2.gif','../../images/onellenorzes_2.gif','../../images/kilepes_2.gif','../../images/vissza_2.gif')">
+<div class="menu_layer" id="menu">
+  <table border="0" cellpadding="0" cellspacing="10" background="../../images/menuback.jpg">
+    <tr>
+      <td><a href="../../nyitolap.html" target="_top" onClick="MM_nbGroup('down','group1','nyitolap','../../images/nyitolap_2.gif',1)" onMouseOver="MM_nbGroup('over','nyitolap','../../images/nyitolap_2.gif','../../images/nyitolap_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="nyitolap" src="../../images/nyitolap_1.gif" border="0" alt="Nyitólap" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="alapismeretek.html" target="_top" onClick="MM_nbGroup('down','group1','Alapismeretek','../../images/alapismeretek_2.gif',1)" onMouseOver="MM_nbGroup('over','Alapismeretek','../../images/alapismeretek_2.gif','../../images/alapismeretek_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img src="../../images/alapismeretek_1.gif" alt="alapismeretek" name="Alapismeretek" border="0" onload=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../lagyszaruak/lagyszaruak.html" target="_top" onClick="MM_nbGroup('down','group1','lagyszaruak','../../images/lagyszaruak_2.gif',1)" onMouseOver="MM_nbGroup('over','lagyszaruak','../../images/lagyszaruak_2.gif','../../images/lagyszaruak_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="lagyszaruak" src="../../images/lagyszaruak_1.gif" border="0" alt="Lágyszárúak" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../fasszaruak/fasszaruak.html" target="_top" onClick="MM_nbGroup('down','group1','fasszaruak','../../images/fasszaruak_2.gif',1)" onMouseOver="MM_nbGroup('over','fasszaruak','../../images/fasszaruak_2.gif','../../images/fasszaruak_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="fasszaruak" src="../../images/fasszaruak_1.gif" border="0" alt="Fásszárúak" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../novenyhaziak/novenyhaziak.html" target="_top" onClick="MM_nbGroup('down','group1','novenyhaziak','../../images/novenyhaziak_2.gif',1)" onMouseOver="MM_nbGroup('over','novenyhaziak','../../images/novenyhaziak_2.gif','../../images/novenyhaziak_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="novenyhaziak" src="../../images/novenyhaziak_1.gif" border="0" alt="Nyövényháziak" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../tablazatok/tablazatok.html" target="_top" onClick="MM_nbGroup('down','group1','tablazatok','../../images/tablazatok_2.gif',1)" onMouseOver="MM_nbGroup('over','tablazatok','../../images/tablazatok_2.gif','../../images/tablazatok_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="tablazatok" src="../../images/tablazatok_1.gif" border="0" alt="Táblázatok" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../nevmutato/nevmutato.html" target="_top" onClick="MM_nbGroup('down','group1','nevmutatok','../../images/nevmutatok_2.gif',1)" onMouseOver="MM_nbGroup('over','nevmutatok','../../images/nevmutatok_2.gif','../../images/nevmutatok_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="nevmutatok" src="../../images/nevmutatok_1.gif" border="0" alt="Névmutatók" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../fogalomtar.html" target="_top" onClick="MM_nbGroup('down','group1','fogalomtar','../../images/fogalomtar_2.gif',1)" onMouseOver="MM_nbGroup('over','fogalomtar','../../images/fogalomtar_2.gif','../../images/fogalomtar_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="fogalomtar" src="../../images/fogalomtar_1.gif" border="0" alt="Fogalomtár" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../../teszt/onellenorzes.html" target="_top" onClick="MM_nbGroup('down','group1','onellenorzes','../../images/onellenorzes_2.gif',1)" onMouseOver="MM_nbGroup('over','onellenorzes','../../images/onellenorzes_2.gif','../../images/onellenorzes_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="onellenorzes" src="../../images/onellenorzes_1.gif" border="0" alt="Önellenõrzés" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="javascript:window.close()" target="_top" onClick="MM_nbGroup('down','group1','kilepes','../../images/kilepes_2.gif',1)" onMouseOver="MM_nbGroup('over','kilepes','../../images/kilepes_2.gif','../../images/kilepes_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="kilepes" src="../../images/kilepes_1.gif" border="0" alt="" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="javascript:history.go(-1)" target="_top" onClick="MM_nbGroup('down','group1','vissza','../../images/vissza_2.gif',1)" onMouseOver="MM_nbGroup('over','vissza','../../images/vissza_2.gif','../../images/vissza_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="vissza" src="../../images/vissza_1.gif" border="0" alt="vissza" onLoad=""></a></td>
+    </tr>
+  </table>
+</div>
+<div class="top_layer" id="top">
+  <div align="center"><img src="../../images/fejlec.jpg" alt="fejlec" width="781" height="79"></div>
+</div>
+<div class="text_layer" id="text" scrolling="no"><!-- InstanceBeginEditable name="text" -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><!--  		@page { size: 21cm 29.7cm; margin: 2cm }  		P { margin-bottom: 0.21cm }  	-->
+<h1 ALIGN="center">A dísznövénytermesztés kialakulása</h1>
+<p ALIGN="JUSTIFY">&nbsp;</p>
+<p ALIGN="JUSTIFY">A n&ouml;v&eacute;nyek  m&aacute;r az õsember &eacute;let&eacute;ben is fontos szerepet  t&ouml;lt&ouml;ttek be, t&aacute;pl&aacute;lkoz&aacute;s&aacute;nak  egyik fõ forr&aacute;s&aacute;t jelentett&eacute;k, de felhaszn&aacute;lta  azokat gy&oacute;gy&iacute;t&aacute;sra vagy &eacute;ppen  var&aacute;zsszernek is, valamint kezdetleges lakhely&eacute;nek  &eacute;p&iacute;t&eacute;s&eacute;re, s az &aacute;llati bõr&ouml;k  mellett, fõk&eacute;nt a melegebb kl&iacute;m&aacute;j&uacute;  ter&uuml;leteken ruh&aacute;zkod&aacute;s&aacute;hoz is.</p>
+<p ALIGN="JUSTIFY">A l&eacute;tfenntart&aacute;shoz  sz&uuml;ks&eacute;ges c&eacute;lok mellett azonban m&aacute;r az  &oacute;kori birodalmak n&eacute;pei is felismert&eacute;k a n&ouml;v&eacute;nyek  d&iacute;sz&iacute;tõ &eacute;rt&eacute;k&eacute;t. A k&iacute;nai  cs&aacute;sz&aacute;rok m&aacute;r 5000 &eacute;vvel ezelõtt vir&aacute;gos  kerteket mûveltettek, s a bazsar&oacute;zsa (Paeonia) &eacute;s a  krizant&eacute;m mûvel&eacute;se, nemes&iacute;t&eacute;se ott m&aacute;r  t&ouml;bbezer &eacute;ves m&uacute;ltra tekint vissza.</p>
+<p ALIGN="JUSTIFY">Az &oacute;kori Babilon  v&aacute;ros&aacute;nak f&uuml;ggõkertjeit (a mai Irak ter&uuml;let&eacute;n)  az &oacute;kori vil&aacute;g h&eacute;t csod&aacute;ja k&ouml;z&eacute;  sorolt&aacute;k (Szemir&aacute;misz f&uuml;ggõkertje). Perzsi&aacute;ban  (Ir&aacute;n), melyet a r&oacute;zs&aacute;k birodalm&aacute;nak is  emlegettek, az utak ment&eacute;n a karav&aacute;nok, utaz&oacute;k  sz&aacute;m&aacute;ra pihenõhelyk&eacute;nt parkokat, ligeteket  &quot;paradeiszosz&quot;-okat alak&iacute;tottak ki. Innen sz&aacute;rmazik  &quot;paradicsom&quot; szavunk, s ez&eacute;rt eredeti jelent&eacute;se  az &eacute;denkertnek felel meg.</p>
+<p ALIGN="JUSTIFY">A F&ouml;ldk&ouml;zi-tenger  menti mediterr&aacute;n t&aacute;jakon az &oacute;kori g&ouml;r&ouml;g  &eacute;s r&oacute;mai birodalmakban csod&aacute;latos kertkult&uacute;ra  vir&aacute;gzott. A r&oacute;maiak idej&eacute;ben fajt&aacute;k  kiv&aacute;logat&aacute;s&aacute;val, megfelelõ termeszt&eacute;si  elj&aacute;r&aacute;sok alkalmaz&aacute;s&aacute;val el&eacute;rt&eacute;k,  hogy az &eacute;v minden napj&aacute;n vir&aacute;gz&oacute;  r&oacute;zs&aacute;khoz juthassanak.</p>
+<p ALIGN="JUSTIFY">A nagy &oacute;kori  birodalmak hanyatl&aacute;sa ut&aacute;n a kult&uacute;ra k&ouml;zpontja  a mediterr&aacute;nn&aacute;l l&eacute;nyegesen kedvezõtlenebb  kl&iacute;m&aacute;j&uacute; &Eacute;Ny- &eacute;s K&ouml;z&eacute;p-Eur&oacute;p&aacute;ba  ker&uuml;lt. Itt azonban a vir&aacute;gkult&uacute;ra &uacute;jj&aacute;sz&uuml;let&eacute;s&eacute;re  k&ouml;zel 1000 &eacute;vet kellett v&aacute;rni.</p>
+<p ALIGN="JUSTIFY">A k&ouml;z&eacute;pkori  Eur&oacute;pa kolostorkertjeinek vir&aacute;gait (&aacute;rv&aacute;cska,  ibolya, sz&aacute;zszorsz&eacute;p, gyûszûvir&aacute;g, pipacs,  nõszirom, õszi kikerics, gy&ouml;ngyvir&aacute;g, b&uacute;zavir&aacute;g,  nefelejcs, feh&eacute;r liliom, m&aacute;lyva, s&aacute;rgaviola) nem  sz&eacute;ps&eacute;g&uuml;k, hanem gy&oacute;gy&iacute;t&oacute;  hat&aacute;suk miatt gondozt&aacute;k.</p>
+<p ALIGN="JUSTIFY">Az &uacute;jkor  forradalmi v&aacute;ltoz&aacute;sokat hozott a tudom&aacute;nyban,  mûv&eacute;szetekben &eacute;s kertkult&uacute;r&aacute;ban is. Az  1400-as &eacute;vekben (vagyis k&ouml;zel 1000 &eacute;vvel a r&oacute;mai  birodalom felboml&aacute;sa ut&aacute;n) It&aacute;li&aacute;ban  ism&eacute;t divatba j&ouml;ttek az antik r&oacute;mai birodalom  d&iacute;szes kertjei, &ouml;r&ouml;kz&ouml;ldekkel befuttatott  lugasok, mirtusz-, puszp&aacute;ng-, borosty&aacute;n- &eacute;s  r&oacute;zsas&ouml;v&eacute;nyek. V&iacute;zes&eacute;sek, sz&ouml;kõkutak  d&iacute;sz&iacute;tett&eacute;k &uacute;jra a kerteket. A vir&aacute;gok  m&aacute;r kiz&aacute;r&oacute;lag sz&eacute;ps&eacute;g&uuml;k,  d&iacute;sz&iacute;tõ &eacute;rt&eacute;k&uuml;k miatt ker&uuml;ltek  a kertekbe. </p>
+<p ALIGN="JUSTIFY">A nagy f&ouml;ldrajzi  felfedez&eacute;sek kora k&ouml;vetkezett. Kolumbusz eljut az  &quot;&Uacute;jvil&aacute;gba&quot; (1492), Magellan k&ouml;r&uuml;lhaj&oacute;zza  a F&ouml;ldet (1543), a portug&aacute;l haj&oacute;sok Afrika  megker&uuml;l&eacute;s&eacute;vel el&eacute;rik a mes&eacute;s Kelet  fûszerszigeteit. Eur&oacute;pa tud&oacute;sai a n&ouml;v&eacute;nyvil&aacute;g  soha sem k&eacute;pzelt gazdags&aacute;g&aacute;t kezdik megismerni.  A tengereken t&uacute;lr&oacute;l, idegen f&ouml;ldr&eacute;szekrõl  &eacute;rkezett n&ouml;v&eacute;ny&uacute;jdons&aacute;gok a fõ&uacute;ri  kertekben, valamint az ez idõ t&aacute;jt l&eacute;trej&ouml;võ  gyûjtem&eacute;nyes kertekben, botanikus kertekben kapnak helyet  (1544 Pisa, 1545 Padua, 1545 Firenze, 1568 Bologna, 1577 Leiden  stb.).</p>
+<p>1599-ben Leidenben &eacute;p&iacute;tik az elsõ  &uuml;vegh&aacute;zat, s &iacute;gy m&aacute;r korl&aacute;tlan  lehetõs&eacute;gek ny&iacute;lnak az egzotikus t&aacute;jakr&oacute;l  sz&aacute;rmaz&oacute; n&ouml;v&eacute;nyek termeszt&eacute;s&eacute;re.  Hollandia kiterjeszti hatalm&aacute;t a keleti tengereken, s 1607-ben  megalap&iacute;tja a Holland Kelet-Indiai T&aacute;rsas&aacute;got,  hogy biztos&iacute;tsa hatalm&aacute;t az indon&eacute;ziai,  d&eacute;lkelet-&aacute;zsiai, csendes-&oacute;ce&aacute;ni  fûszerkereskedelemben. A kiz&aacute;r&oacute;lag kereskedelmi  &eacute;rt&eacute;knek sz&aacute;m&iacute;t&oacute; fûszerek mellett  t&ouml;megesen ker&uuml;ltek addig ismeretlen n&ouml;v&eacute;nyek  Eur&oacute;p&aacute;ba.</p>
+<p ALIGN="JUSTIFY">A h&iacute;res  n&eacute;metalf&ouml;ldi term&eacute;szettud&oacute;s, Carolus  Clusius (1526-1609) k&ouml;zremûk&ouml;d&eacute;s&eacute;vel ker&uuml;lt  ebben az idõben T&ouml;r&ouml;korsz&aacute;gb&oacute;l B&eacute;csbe,  majd onnan Hollandi&aacute;ba a j&aacute;cint, a cs&aacute;sz&aacute;rkorona  (Fritillaria imperialis) &eacute;s a tulip&aacute;n. Õ veti meg a  holland vir&aacute;ghagyma-termeszt&eacute;s alapjait. Az õ nev&eacute;hez  fûzõdik az is, hogy az eleinte Eur&oacute;p&aacute;ban  d&iacute;szn&ouml;v&eacute;nyk&eacute;nt befogadott, kir&aacute;lyi  udvarok asztalain v&aacute;gott vir&aacute;gk&eacute;nt v&aacute;z&aacute;ba  ker&uuml;lõ Solanum tuberosum-ot, (a burgony&aacute;t) Ausztri&aacute;ban,  N&eacute;metorsz&aacute;gban siker&uuml;lt alapvetõ  &eacute;lelmiszern&ouml;v&eacute;nyk&eacute;nt elterjeszteni.</p>
+<!-- InstanceEndEditable --></div>
+<img src="../../images/kszi.gif" alt="logo" width="120" height="82">
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,2243 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="undefined"><!-- InstanceBegin template="/Templates/sablon.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<SCRIPT LANGUAGE="JavaScript1.1">
+<!--
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+<script src="../../script.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Növényismereti Lista</title>
+<!-- InstanceEndEditable -->
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<!-- InstanceBeginEditable name="head" -->
+
+
+<style type="text/css">
+<!--
+.style2 {font-size: large; }
+-->
+</style>
+<!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+a:link {
+	text-decoration: none;
+	color: #FF0000;
+}
+a:visited {
+	text-decoration: none;
+	color: #FF0000;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+#Layer1 {
+	position:absolute;
+	width:335px;
+	height:480px;
+	z-index:1;
+	left: 240px;
+	top: 130px;
+}
+#Layer2 {
+	position:absolute;
+	width:338px;
+	height:487px;
+	z-index:1;
+	overflow: visible;
+}
+-->
+</style></head>
+<body bgcolor="#FFFFFF" onLoad="MM_preloadImages('../../images/nyitolap_2.gif','../../images/alapismeretek_2.gif','../../images/lagyszaruak_2.gif','../../images/fasszaruak_2.gif','../../images/novenyhaziak_2.gif','../../images/tablazatok_2.gif','../../images/nevmutatok_2.gif','../../images/fogalomtar_2.gif','../../images/onellenorzes_2.gif','../../images/kilepes_2.gif','../../images/vissza_2.gif')">
+<div class="menu_layer" id="menu">
+  <table border="0" cellpadding="0" cellspacing="10" background="../../images/menuback.jpg">
+    <tr>
+      <td><a href="../../nyitolap.html" target="_top" onClick="MM_nbGroup('down','group1','nyitolap','../../images/nyitolap_2.gif',1)" onMouseOver="MM_nbGroup('over','nyitolap','../../images/nyitolap_2.gif','../../images/nyitolap_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="nyitolap" src="../../images/nyitolap_1.gif" border="0" alt="Nyitólap" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../alapismeretek/alapismeretek.html" target="_top" onClick="MM_nbGroup('down','group1','Alapismeretek','../../images/alapismeretek_2.gif',1)" onMouseOver="MM_nbGroup('over','Alapismeretek','../../images/alapismeretek_2.gif','../../images/alapismeretek_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img src="../../images/alapismeretek_1.gif" alt="alapismeretek" name="Alapismeretek" border="0" onload=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../lagyszaruak/lagyszaruak.html" target="_top" onClick="MM_nbGroup('down','group1','lagyszaruak','../../images/lagyszaruak_2.gif',1)" onMouseOver="MM_nbGroup('over','lagyszaruak','../../images/lagyszaruak_2.gif','../../images/lagyszaruak_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="lagyszaruak" src="../../images/lagyszaruak_1.gif" border="0" alt="Lágyszárúak" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../fasszaruak/fasszaruak.html" target="_top" onClick="MM_nbGroup('down','group1','fasszaruak','../../images/fasszaruak_2.gif',1)" onMouseOver="MM_nbGroup('over','fasszaruak','../../images/fasszaruak_2.gif','../../images/fasszaruak_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="fasszaruak" src="../../images/fasszaruak_1.gif" border="0" alt="Fásszárúak" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../novenyhaziak/novenyhaziak.html" target="_top" onClick="MM_nbGroup('down','group1','novenyhaziak','../../images/novenyhaziak_2.gif',1)" onMouseOver="MM_nbGroup('over','novenyhaziak','../../images/novenyhaziak_2.gif','../../images/novenyhaziak_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="novenyhaziak" src="../../images/novenyhaziak_1.gif" border="0" alt="Nyövényháziak" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../tablazatok/tablazatok.html" target="_top" onClick="MM_nbGroup('down','group1','tablazatok','../../images/tablazatok_2.gif',1)" onMouseOver="MM_nbGroup('over','tablazatok','../../images/tablazatok_2.gif','../../images/tablazatok_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="tablazatok" src="../../images/tablazatok_1.gif" border="0" alt="Táblázatok" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="nevmutato.html" target="_top" onClick="MM_nbGroup('down','group1','nevmutatok','../../images/nevmutatok_2.gif',1)" onMouseOver="MM_nbGroup('over','nevmutatok','../../images/nevmutatok_2.gif','../../images/nevmutatok_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="nevmutatok" src="../../images/nevmutatok_1.gif" border="0" alt="Névmutatók" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../fogalomtar.html" target="_top" onClick="MM_nbGroup('down','group1','fogalomtar','../../images/fogalomtar_2.gif',1)" onMouseOver="MM_nbGroup('over','fogalomtar','../../images/fogalomtar_2.gif','../../images/fogalomtar_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="fogalomtar" src="../../images/fogalomtar_1.gif" border="0" alt="Fogalomtár" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../../teszt/onellenorzes.html" target="_top" onClick="MM_nbGroup('down','group1','onellenorzes','../../images/onellenorzes_2.gif',1)" onMouseOver="MM_nbGroup('over','onellenorzes','../../images/onellenorzes_2.gif','../../images/onellenorzes_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="onellenorzes" src="../../images/onellenorzes_1.gif" border="0" alt="Önellenõrzés" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="javascript:window.close()" target="_top" onClick="MM_nbGroup('down','group1','kilepes','../../images/kilepes_2.gif',1)" onMouseOver="MM_nbGroup('over','kilepes','../../images/kilepes_2.gif','../../images/kilepes_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="kilepes" src="../../images/kilepes_1.gif" border="0" alt="" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="javascript:history.go(-1)" target="_top" onClick="MM_nbGroup('down','group1','vissza','../../images/vissza_2.gif',1)" onMouseOver="MM_nbGroup('over','vissza','../../images/vissza_2.gif','../../images/vissza_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="vissza" src="../../images/vissza_1.gif" border="0" alt="vissza" onLoad=""></a></td>
+    </tr>
+  </table>
+</div>
+<div class="top_layer" id="top">
+  <div align="center"><img src="../../images/fejlec.jpg" alt="fejlec" width="781" height="79"></div>
+</div>
+<div class="text_layer" id="text" scrolling="no"><!-- InstanceBeginEditable name="text" -->
+<table width="729" border="0" cellpadding="0" cellspacing="0">
+  <!--DWLayoutTable-->
+  
+  <tr>
+    <td width="729" height="37" valign="top"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><!--  		@page { size: 21cm 29.7cm; margin: 2cm }  		P { margin-bottom: 0.21cm }  	-->
+    <h1 ALIGN="center">Növényismereti Lista </h1></td>
+  </tr>
+  <tr>
+    <td height="450" align="center" valign="top"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+      <h1 align="center">
+        <!--  		@page { size: 21cm 29.7cm; margin: 2cm }  		P { margin-bottom: 0.21cm }  	-->
+    Egynyári dísznövények</h1>
+      <h2 align="center">Palántanevelést igénylõ lassú fejlõdésû egynyáriak</h2>
+      <table width="708" height="186" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/lassu fejlodesu palanta/Begonia semperflorens-cultorum.JPG')">Begonia semperflorens-cultorum hibridek</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Begónia    szemperflorensz-kultórum hibridek</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">mindignyíló begónia</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/lassu fejlodesu palanta/Lobelia erinus.JPG')">Lobelia erinus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Lobélia erinusz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">törpe lobélia</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/lassu fejlodesu palanta/Pennisetum setaceum.jpg')">Pennisetum setaceum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Pennizétum    szetáceum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">rózsás tollborzfû</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/lassu fejlodesu palanta/Pennisetum villosum.JPG')">Pennisetum villosum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Pennizétum    villózum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">ezüstös tollborzfû</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/lassu fejlodesu palanta/Salvia farinacea.jpg')">Salvia farinacea</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Szalvia farinácea</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">hamvas zsálya</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/lassu fejlodesu palanta/Salvia splendens.JPG')">Salvia splendens</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Szalvia    szplendensz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">tûzpiros zsálya, paprikavirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/lassu fejlodesu palanta/Senecio cineraria.JPG')">Senecio cineraria</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Szeneció cinerária</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">hamvaska, ezüstlevél</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/lassu fejlodesu palanta/Verbena rigida.JPG')">Verbena rigida</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Verbéna rigida</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">lila verbéna, vasfû</p></td>
+        </tr>
+      </table>
+      <h2>Palántanevelést igénylõ gyors fejlõdésû egynyáriak</h2>
+      <table width="705" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/gyors fejlodesu palanta/Ageratum houstonianum.JPG')">Ageratum houstonianum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Agerátum    husztóniánum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">mexikói bojtocska</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/gyors fejlodesu palanta/Antirrhinum majus.JPG')">Antirrhinum majus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Antirrínum májusz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti oroszlánszáj</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/gyors fejlodesu palanta/Callistephus chinensis.JPG')">Callistephus chinensis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kallisztéfusz    kinenzisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti õszirózsa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/gyors fejlodesu palanta/Celosia cristata.JPG')">Celosia argentea var. cristata f.    cristata</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Celózia argentea    varietász krisztáta forma krisztáta</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">tarajos celózia, kakastaréj</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/gyors fejlodesu palanta/Celosia plumosa.JPG')">Celosia argentea var. cristata f. plumosa</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Celózia argentea    varietász krisztáta forma plumóza</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">tollas celózia</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/gyors fejlodesu palanta/Dahlia hortensis egynyari.JPG')">Dahlia x hortensis (egynyári)</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Dália hortenzisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti dália</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/gyors fejlodesu palanta/Dianthus caryophyllus Chabaud.JPG')">Dianthus caryophyllus Chabaud    fajtacsoport</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Diantusz    kariofillusz Sabó fajtacsoport</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">sabószegfû, egynyári szegfû</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/gyors fejlodesu palanta/Euphorbia marginata.JPG')">Euphorbia marginata</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Euforbia margináta</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">tarka kutyatej, jégvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/gyors fejlodesu palanta/Gazania rigens.JPG')">Gazania rigens</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Gazánia rigensz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">pompás záporvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/gyors fejlodesu palanta/Helichrysum bracteatum.JPG')">Helichrysum bracteatum var. monstrosum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Helikrízum    brakteátum varietász monsztrózum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti szalmavirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/gyors fejlodesu palanta/Heliotropium arborescens.JPG')">Heliotropium arborescens</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Heliotrópium    arboreszcensz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">perui kunkor, kertivanília</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/gyors fejlodesu palanta/Impatiens walleriana.JPG')">Impatiens walleriana</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Impáciensz    valleriána</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">vízifukszia, pistike, törpe, rózsás balzsamína</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/gyors fejlodesu palanta/Limonium sinuatum.JPG')">Limonium sinuatum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Limónium szinuátum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti sóvirág, egynyári sóvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/gyors fejlodesu palanta/Petunia hybrida.JPG')">Petunia x hybrida</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Petúnia hibrida</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti petúnia</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/gyors fejlodesu palanta/Phlox drummondii.JPG')">Phlox drummondii</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Flox drummondi</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">egynyári lángvirág, kerti lángvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/gyors fejlodesu palanta/Rudbeckia hirta.jpg')">Rudbeckia hirta</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Rudbekkia hirta</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">egynyári kúpvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/gyors fejlodesu palanta/Tagetes erecta.JPG')">Tagetes erecta</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Tagétesz erekta</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">nagy büdöske, bársonyvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/gyors fejlodesu palanta/Tagetes patula.JPG')">Tagetes patula</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Tagétesz patula</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">alacsony büdöske, bársonyvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/gyors fejlodesu palanta/Verbena hybrida.JPG')">Verbena x hybrida</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Verbéna hibrida</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">tarka verbéna, kerti vasfû</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/gyors fejlodesu palanta/Zinnia elegans.JPG')">Zinnia elegans</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Cínnia elegansz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">pompás rézvirág, legényrózsa</p></td>
+        </tr>
+      </table>
+      <h2>Állandó helyre vetendõ hidegtûrõ egynyáriak</h2>
+      <table width="703" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/allando helyre vethetok/Amberboa moschata.jpg')">Amberboa moschata</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Amberboa moszkata</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">pézsmabúzavirág, pézsmaszegfû</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/allando helyre vethetok/Bassia scoparia.JPG')">Bassia scoparia</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Basszia szkoparia</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti seprûfû</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/allando helyre vethetok/Calendula officinalis.JPG')">Calendula    officinalis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kalendula    officinálisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti körömvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/allando helyre vethetok/Consolida ambigua.jpg')">Consolida ambigua</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Konszolida ambigua</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">egynyári szarkaláb, kerti szarkaláb</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/allando helyre vethetok/Gypsophyla elegans.JPG')">Gypsophila elegans</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Gipszofíla    elegansz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti fátyolvirág, egynyári fátyolvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/allando helyre vethetok/Lathyrus ododratus.jpg')">Lathyrus odoratus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Latírusz odorátusz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">szagosbükköny, illatos lednek</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/allando helyre vethetok/Matthiola incana.JPG')">Matthiola incana</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Mattióla inkána</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti viola</p></td>
+        </tr>
+      </table>
+      <h2>Állandó helyre vetendõ melegkedvelõ egynyáriak</h2>
+      <table width="702" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/allando helyre vethetok/Amaranthus caudatus.JPG')">Amaranthus caudatus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Amarantusz    kaudátusz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">bókoló amaránt</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/allando helyre vethetok/Cosmos bipinnatus.JPG')">Cosmos bipinnatus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kozmosz    bipinnátusz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti pillangóvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/allando helyre vethetok/Cucurbita pepo.JPG')">Cucurbita pepo</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kukurbita pépó</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">dísztök</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/allando helyre vethetok/Gomphrena globosa.JPG')">Gomphrena globosa</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Gomfréna globóza</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti golyófüzény, bíborka, gombvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/allando helyre vethetok/Helianthus annuus.jpg')">Helianthus annuus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Heliantusz annusz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">napraforgó</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/allando helyre vethetok/Ipomoea purpurea.JPG')">Ipomoea purpurea</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ipomea purpurea</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti hajnalka</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/allando helyre vethetok/Ipomoea tricolor.JPG')">Ipomoea tricolor</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ipomea trikolor</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">nagyvirágú hajnalka</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/allando helyre vethetok/Phaseolus coccineus.JPG')">Phaseolus coccineus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Fazeólusz    kokcíneusz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">tûzbab, törökbab</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/allando helyre vethetok/Portulaca grandiflora.JPG')">Portulaca grandiflora</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Portuláka    grandiflóra</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">porcsinrózsa, kukacvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/allando helyre vethetok/Tropaeolum majus.JPG')">Tropaeolum majus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Tropeólum májusz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti sarkantyúka</p></td>
+        </tr>
+      </table>
+      <h2>Dugványozással szaporítandó egynyáriak</h2>
+      <table width="703" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/dugvanyok/Alternanthera ficoidea.JPG')">Alternanthera    ficoidea var. amoena</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Alternantéra ficoidea varietász amoéna</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">papagájlevél</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/dugvanyok/Bidens ferulifolia.jpg')">Bidens ferulifolia</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Bidensz ferulifólia</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">husánglevelû farkasfog</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/dugvanyok/Helichrysum petiolare.JPG')">Helichrysum petiolare</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Helikrízum petioláre</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kereklevelû szalmagyopár</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/dugvanyok/Iresine herbstii.JPG')">Iresine herbstii</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Irezíne herbszti</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">egynyári pelyvavirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/dugvanyok/Iresine lindenii.JPG')">Iresine lindenii</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Irezíne lindeni</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">évelõ pelyvavirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/dugvanyok/Lantana camara.JPG')">Lantana camara</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Lantána kamara</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">tarka sétányrózsa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/dugvanyok/Petunia ')">Petunia Surfinia fajtacsoport</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Petúnia szurfínia fajtacsoport</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kisvirágú petúnia</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/dugvanyok/Pilea microphylla.JPG')">Pilea microphylla</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Pílea mikrofilla</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">aprólevelû tüzérvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/dugvanyok/Plectranthus  forsteri.JPG')">Plectranthus forsteri</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Plektrantusz forszteri</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kakassarkantyú</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../egynyariak/dugvanyok/Solenostemon scutellaroides.jpg')">Solenostemon scutellarioides</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Szolenosztemon szkutellaroidesz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">tarka kóleusz, mozaiklevél, virágcsalán</p></td>
+        </tr>
+      </table>
+      <h1>&nbsp;</h1>
+      <h1>Kétnyári dísznövények</h1>
+      <h2>Gyors fejlõdésû kétnyári dísznövények</h2>
+      <table width="707" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../ketnyariak/Bellis perennis.JPG')">Bellis perennis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Bellisz perennisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti százszorszép</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../ketnyariak/Erysimum cheirii.JPG')">Erysimum cheirii</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Eriszímum kejri</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">sárgaviola</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../ketnyariak/Myosotis alpestris.jpg')">Myosotis alpestris</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Miozótisz    alpesztrisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">havasi nefelejcs</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../ketnyariak/Viola wittrockiana.JPG')">Viola x wittrockiana</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Viola vitrokiána</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti árvácska</p></td>
+        </tr>
+      </table>
+      <h2>Lassú fejlõdésû kétnyári dísznövények</h2>
+      <table width="706" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../ketnyariak/Campanula medium.JPG')">Campanula medium</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kampanula médium</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">csupros harangvirág, bögrevirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../ketnyariak/Dianthus barbatus.JPG')">Dianthus barbatus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Diantusz barbátusz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">török szegfû</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../ketnyariak/Dianthus caryophyllus.JPG')">Dianthus caryophyllus Grenadin fajtacsoport</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Diantusz    kariofíllusz Grenaden fajtacsoport</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Grenadin szegfû</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../ketnyariak/Digitalis purpurea.JPG')">Digitalis purpurea</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Digitálisz    purpurea</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">piros gyûszûvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../ketnyariak/Lunaria annua.JPG')">Lunaria annua</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Lunária annua</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti holdviola</p></td>
+        </tr>
+      </table>
+      <h1>&nbsp;</h1>
+      <h1>Évelõ dísznövények</h1>
+      <h2>Közepes vízigényû évelõk</h2>
+      <table border="1" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Achillea filipendulina.jpg')">Achillea    filipendulina</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ahillea filipendulina</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">sárga cickafark</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Achillea millefolium.JPG')">Achillea    millefolium</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ahillea    millefólium</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">közönséges cickafark</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Aquilegia vulgaris.JPG')">Aquilegia vulgaris</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Akvilégia    vulgárisz</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">közönséges harangláb</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Armeria maritima.JPG')">Armeria maritima</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Arméria maritima</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">tengerparti pázsitszegfû</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Asparagus pseudoscaber.JPG')">Asparagus    pseudoscaber</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Aszparágusz    pszeudoszkaber</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">érdes spárga</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Aster alpinus.JPG')">Aster alpinus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ászter alpinusz</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">havasi õszirózsa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Aster amellus.JPG')">Aster amellus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ászter amellusz</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">csillagõszirózsa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Aster dumosus.JPG')">Aster dumosus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ászter dumózusz</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">törpe õszirózsa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Aster ericoides.JPG')">Aster ericoides</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ászter erikoidesz</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">hangaõszirózsa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Aster novae-angliae.JPG')">Aster novae-angliae</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ászter nové-anglié</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">mirigyes õszirózsa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Aster novi-belgii.JPG')">Aster novi-belgii</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ászter novi-belbi</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">kopasz õszirózsa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Aubrieta cultorum.jpg')">Aubrieta x cultorum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Aubriéta cultórum</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">kerti pázsitviola</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Bergenia crassifolia.JPG')">Bergenia    crassifolia</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Bergénia    krasszifólia</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">vaskoslevelû bõrlevél</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Coreopsis grandiflora.JPG')">Coreopsis    grandiflora</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Korepszisz    grandiflóra</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">nagyfészkû szépecske</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Delphinium cultorum.jpg')">Delphinium x    cultorum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Delfínium kultórum</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">évelõ szarkaláb</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Dendranthema grandiflorum.JPG')">Dendranthema x    grandiflorum (évelõ)</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Dendrantéma    grandiflórum</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">kerti krizantém</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Erigeron speciosus.JPG')">Erigeron speciosus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Erigeron    szpeciózusz</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">pompás küllõrojt</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Hemerocallis fulva.JPG')">Hemerocallis fulva</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Hemerokallisz    fulva</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">lángszínû sásliliom</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Hemerocallis lilio-asphodelus.JPG')">Hemerocallis    lilio-asphodelus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Hemerokallisz    lilio-aszfodelusz</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">sárga sásliliom</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Iris germanica.JPG')">Iris germanica</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Írisz germanika</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">kerti nõszirom</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Leucanthemum superbum.JPG')">Leucanthemum x    superbum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Leukantémum    szuperbum</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">pompás margitvirág, kerti margaréta</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Lupinus polyphyllus.jpg')">Lupinus polyphyllus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Lupínusz    polifillusz</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">erdei csillagfürt</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Paeonia lactiflora.jpg')">Paeonia lactiflora</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Peónia laktiflóra</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">illatos peónia, pünkösdirózsa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Paeonia officinalis.jpg')">Paeonia officinalis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Peónia    officinálisz</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">kerti bazsarózsa, pünkösdirózsa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Papaver orientale.jpg')">Papaver orientale</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Papáver orientále</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">keleti mák, évelõ mák, díszpipacs</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Phlox paniculata.JPG')">Phlox paniculata</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Flox panikuláta</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">bugás lángvirág, évelõ lángvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/kozepes vizigenyu/Rudbeckia fulgida.JPG')">Rudbeckia fulgida    var. speciosa</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Rudbekkia fulgida    varietász specióza</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">szépséges kúpvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="../../evelok/kozepes vizigenyu/Solidago hybrida.JPG">Solidago hybrida</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Szolidágó hibrida</p></td>
+          <td width="285" valign="middle"><p align="left" class="style2">aranyvesszõ</p></td>
+        </tr>
+      </table>
+      <h2>Szárazságtûrõ évelõk</h2>
+      <table border="1" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/szarazsagturok/Arabis alpina.JPG')">Arabis alpina ssp.    caucasica</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Arábisz alpina szubszpécisz kaukázika</p></td>
+          <td width="283" valign="middle"><p align="left" class="style2">kaukázusi ikravirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/szarazsagturok/Aurinia saxatilis.JPG')">Aurinia saxatilis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Aurinia szaxatilisz</p></td>
+          <td width="283" valign="middle"><p align="left" class="style2">sziklai ternye, szirti ternye</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/szarazsagturok/Cerastium tomentosum.JPG')">Cerastium    tomentosum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Cerasztium tomentózum</p></td>
+          <td width="283" valign="middle"><p align="left" class="style2">molyhos madárhúr</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/szarazsagturok/Dianthus plumarius.JPG')">Dianthus plumarius</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Diantusz plumáriusz</p></td>
+          <td width="283" valign="middle"><p align="left" class="style2">tollas szegfû</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/szarazsagturok/Euphorbia myrsinites.JPG')">Euphorbia    myrsinites</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Euforbia mírzinítesz</p></td>
+          <td width="283" valign="middle"><p align="left" class="style2">délszaki kutyatej</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/szarazsagturok/Euphorbia polychroma.jpg')">Euphorbia    polychroma</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Euforbia polikróma</p></td>
+          <td width="283" valign="middle"><p align="left" class="style2">színváltó kutyatej</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/szarazsagturok/Festuca pallens.JPG')">Festuca pallens</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Fesztuka pallens</p></td>
+          <td width="283" valign="middle"><p align="left" class="style2">deres csenkesz</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/szarazsagturok/Gailardia aristata.JPG')">Gaillardia aristata</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Gajlardia arisztáta</p></td>
+          <td width="283" valign="middle"><p align="left" class="style2">évelõ kokárdavirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/szarazsagturok/Limonium tataricum.JPG')">Goniolimon    tataricum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Goniolimon tatarikum</p></td>
+          <td width="283" valign="middle"><p align="left" class="style2">tatár sóvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/szarazsagturok/Geranium sanguineum.JPG')">Geranium sanguineum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Geránium sangvíneum</p></td>
+          <td width="283" valign="middle"><p align="left" class="style2">piros gólyaorr</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/szarazsagturok/Gypsophila paniculata.JPG')">Gypsophila    paniculata</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Gipszofíla panikuláta</p></td>
+          <td width="283" valign="middle"><p align="left" class="style2">buglyos fátyolvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/szarazsagturok/Iberis sempervirens.JPG')">Iberis sempervirens</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Iberisz szempervirensz</p></td>
+          <td width="283" valign="middle"><p align="left" class="style2">örökzöld tatárvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/szarazsagturok/Iris pumila.jpg')">Iris pumila</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Írisz pumila</p></td>
+          <td width="283" valign="middle"><p align="left" class="style2">törpe nõszirom</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/szarazsagturok/Lavandula angustifolia.JPG')">Lavandula    angustifolia</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Lavandula angusztifólia</p></td>
+          <td width="283" valign="middle"><p align="left" class="style2">orvosi levendula</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/szarazsagturok/Oenothera macrocarpa.JPG')">Oenothera    macrocarpa</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Önotéra makrokarpa</p></td>
+          <td width="283" valign="middle"><p align="left" class="style2">missouri-ligetszépe</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/szarazsagturok/Phlox subulata.JPG')">Phlox subulata</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Flox szubuláta</p></td>
+          <td width="283" valign="middle"><p align="left" class="style2">árlevelû lángvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/szarazsagturok/Pulsatilla vulgaris.JPG')">Pulsatilla vulgaris    ssp. grandis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Pulzatilla vulgárisz szubszpéciesz grandisz</p></td>
+          <td width="283" valign="middle"><p align="left" class="style2">leánykökörcsin</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/szarazsagturok/Sedum acre.JPG')">Sedum acre</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Szédum akre</p></td>
+          <td width="283" valign="middle"><p align="left" class="style2">csípõs varjúháj</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/szarazsagturok/Sedum album.JPG')">Sedum album</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Szédum album</p></td>
+          <td width="283" valign="middle"><p align="left" class="style2">fehér varjúháj</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/szarazsagturok/Sedum reflexum.JPG')">Sedum reflexum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Szédum reflexum</p></td>
+          <td width="283" valign="middle"><p align="left" class="style2">kövi varjúháj</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/szarazsagturok/Sedum spectabile.JPG')">Sedum spectabile</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Szédum szpektábile</p></td>
+          <td width="283" valign="middle"><p align="left" class="style2">pompás varjúháj</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/szarazsagturok/Sedum spurium.JPG')">Sedum spurium</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Szédum spúrium</p></td>
+          <td width="283" valign="middle"><p align="left" class="style2">kaukázusi varjúháj</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/szarazsagturok/Sempervivum tectorum.JPG')">Sempervivum    tectorum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Szempervívum tektórum</p></td>
+          <td width="283" valign="middle"><p align="left" class="style2">házi kövirózsa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/szarazsagturok/Stachis byzantina.JPG')">Stachys byzantina</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Sztahisz bizantína</p></td>
+          <td width="283" valign="middle"><p align="left" class="style2">gyapjas tisztesfû, nyúlfüle, nyuszifül</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/szarazsagturok/Veronica incana.jpg')">Veronica incana</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Veronika inkána</p></td>
+          <td width="283" valign="middle"><p align="left" class="style2">szürke veronika</p></td>
+        </tr>
+      </table>
+      <h2>Árnyéki évelõk</h2>
+      <table width="698" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/arnyeki evelok/Ajuga reptans.jpg')">Ajuga reptans</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ajuga reptansz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">indás ínfû</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/arnyeki evelok/Anemone japonica.JPG')">Anemone hupehensis    var. japonica</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Anemóne hupehenzisz varietász japonika</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">japán szellõrózsa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/arnyeki evelok/Anemone sylvestris.jpg')">Anemone sylvestris</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Anemóne szilvesztrisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">erdei szellõrózsa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/arnyeki evelok/Astilbe arensii.jpg')">Astilbe x arendsii</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Asztilbe arendsi</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti tollbuga</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/arnyeki evelok/Campanula carpatica.JPG')">Campanula carpatica</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Campanula kárpátika</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kárpáti harangvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/arnyeki evelok/Convallaria majalis.JPG')">Convallaria majalis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Konvallária majálisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">májusi gyöngyvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/arnyeki evelok/Lamium galeobdolon.jpg')">Galeobdolon luteum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Galeobdolon luteum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">sárga árvacsalán</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/arnyeki evelok/Heuchera sanguinea.jpg')">Heuchera sanguinea</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Heuhéra sangvínea</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">vérvörös tûzesõ</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/arnyeki evelok/Hosta lancifolia.JPG')">Hosta lancifolia</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Hoszta lancifólia</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">lándzsáslevelû árnyékliliom</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/arnyeki evelok/Hosta plantaginae.JPG')">Hosta plantaginea</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Hoszta plantaginé</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">útifûlevelû árnyékliliom</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/arnyeki evelok/Primula elatior.jpg')">Primula elatior</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Primula elácior</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">sudár kankalin</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/arnyeki evelok/Primula vulgaris.jpg')">Primula vulgaris</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Primula vulgárisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">szártalan kankalin</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/arnyeki evelok/Vinca major.jpg')">Vinca major</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Vinka májor</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">nagy télizöld meténg</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/arnyeki evelok/Vinca minor.JPG')">Vinca minor</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Vinka minor</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kis télizöld meténg</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/arnyeki evelok/Viola odorata.JPG')">Viola odorata</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Viola odoráta</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">illatos ibolya</p></td>
+        </tr>
+      </table>
+      <h2>Vízigényes évelõk</h2>
+      <table width="698" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/vizigenyes evelok/Caltha palustris.jpg')">Caltha palustris</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kalta palusztrisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">mocsári gólyahír</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/vizigenyes evelok/Iris pseudacorus.jpg')">Iris pseudacorus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Írisz pszeudakórusz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">mocsári nõszirom</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/vizigenyes evelok/Iris sibirica.jpg')">Iris sibirica</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Írisz szibirika</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">szibériai nõszirom</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/vizigenyes evelok/Nuphar luteum.jpg')">Nuphar luteum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Nufar lúteum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">sárga vízitök</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/vizigenyes evelok/Nymphaea alba.JPG')">Nymphaea alba</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Nímpfea alba</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">fehér tündérrózsa, fehér tavirózsa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/vizigenyes evelok/Typha latifolia.JPG')">Typha latifolia</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Tífa latifólia</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">széleslevelû gyékény</p></td>
+        </tr>
+      </table>
+      <h2>Fagyérzékeny évelõk</h2>
+      <table width="698" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/fagyerzekeny evelok/Canna generalis.JPG')">Canna x generalis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kánna generálisz</p></td>
+          <td width="252" valign="middle"><p align="left" class="style2">kerti kanna, virágnád</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/fagyerzekeny evelok/Dahlia hortensis evelo.JPG')">Dahlia x hortensis (évelõ)</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Dália hortenzisz</p></td>
+          <td width="252" valign="middle"><p align="left" class="style2">kerti dália</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/fagyerzekeny evelok/Gladiolus gandavensis evelo.JPG')">Gladiolus x    gandavensis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Gladiólusz gandavenzisz</p></td>
+          <td width="252" valign="middle"><p align="left" class="style2">kerti kardvirág, kerti gladiólusz</p></td>
+        </tr>
+      </table>
+      <h2>Hagymás és gumós évelõk</h2>
+      <table width="700" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/hagymasak/Crocus vernus.jpg')">Crocus vernus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Krókusz vernusz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">tavaszi sáfrány</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/hagymasak/Fritillaria imperialis.JPG')">Fritillaria    imperialis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Fritillária    imperiálisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">császárkorona</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/hagymasak/Galanthus nivalis.JPG')">Galanthus nivalis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Galantusz niválisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kikeleti hóvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/hagymasak/Hyacinthus orientalis.JPG')">Hyacinthus    orientalis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Jácintusz    orientálisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti jácint</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/hagymasak/Lilium sp.jpg')">Lilium sp.</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Lilium </p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">liliom</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/hagymasak/Muscari racemosum.JPG')">Muscari neglectum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Muszkari neglektum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">fürtös gyöngyike</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/hagymasak/Narcissus incomparabilis.JPG')">Narcissus x    incomparabilis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Nárcisszusz    inkomparábilisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">pompás nárcisz</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/hagymasak/Narcissus poeticus.JPG')">Narcissus poeticus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Nárcisszusz    poétikusz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">fehér nárcisz</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/hagymasak/Narcissus pseudonarcissus.jpg')">Narcissus    pseudonarcissus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Nárcisszusz    pszeudonárcisszusz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">csupros nárcisz</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../evelok/hagymasak/Tulipa hybrida.JPG')">Tulipa hibridek</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Tulipa hibridek</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti tulipán</p></td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      <h1>Lombhullató díszfák</h1>
+      <table border="1" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Acer campestre.JPG')">Acer campestre</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ácer kampesztre</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">mezei juhar</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Acer negundo.JPG')">Acer negundo</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ácer negundó</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">zöld juhar</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Acer palmatum.jpg')">Acer palmatum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ácer palmátum</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">ujjas juhar</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Acer platanoides.JPG')">Acer platanoides</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ácer platanoidesz</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">korai juhar</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Acer pseudoplatanus.jpg')">Acer pseudoplatanus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ácer pszeudoplatánusz</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">hegyi juhar</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Acer saccharinum.jpg')">Acer saccharinum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ácer szahharínum</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">ezüst juhar</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Aesculus carnea.JPG')">Aesculus x carnea</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Észkulusz karnea</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">hússzínû vadgesztenye</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Aesculus hippocastanum.jpg')">Aesculus    hippocastanum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Észkulusz hippokasztánum</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">közönséges vadgesztenye</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Ailanthus altissima.JPG')">Ailanthus altissima</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ajlantusz altisszima</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">bálványfa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Alnus glutinosa.JPG')">Alnus glutinosa</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Alnusz glutinóza</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">mézgás éger</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Betula pendula.JPG')">Betula pendula</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Betula pendula</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">közönséges nyír, bibircses nyír</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Carpinus betulus.JPG')">Carpinus betulus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kárpínusz betulusz</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">közönséges gyertyán</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Catalpa bignonioides.JPG')">Catalpa    bignonioides</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Katalpa bignonioidesz</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">szívlevelû szivarfa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Celtis occidentalis.JPG')">Celtis occidentalis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Celtisz okcidentálisz</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">nyugati ostorfa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Corylus colurna.JPG')">Corylus colurna</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Korílusz kolurna</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">török mogyoró</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Elaeagnus angustifolia.JPG')">Elaeagnus    angustifolia</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Eleágnusz angusztifólia</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">keskenylevelû ezüstfa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Fagus sylvatica.jpg')">Fagus sylvatica</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Fágusz szilvatika</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">közönséges bükk</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Fraxinus excelsior.JPG')">Fraxinus excelsior</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Fraxínusz excelzior</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">magas kõris</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Fraxinus ornus.jpg')">Fraxinus ornus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Fraxínusz ornusz</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">virágos kõris, mannakõris</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Gleditsia triacanthos.JPG')">Gleditsia    triacanthos</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Gledícsia triakantosz</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">tövises lepényfa, krisztustövis</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Koelreuteria paniculata.JPG')">Koelreuteria    paniculata</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Körajtéria panikuláta</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">bugás csörgõfa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Liriodendron tulipifera.JPG')">Liriodendron    tulipifera</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Liriodendron tulipiféra</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">amerikai tulipánfa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Malus hibridek.JPG')">Malus hibridek</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Málusz hibridek</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">díszalma</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Morus alba.JPG')">Morus alba</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Mórusz alba</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">fehér eperfa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Platanus hybrida.jpg')">Platanus hybrida</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Platánusz hibrida</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">közönséges platán</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Populus alba.JPG')">Populus alba</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Populusz alba</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">fehér nyár</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Populus nigra.jpg')">Populus nigra</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Populusz nigra</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">fekete nyár</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Populus simonii.JPG')">Populus simonii</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Populusz szimóni</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">kínai nyár</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Prunus serrulata.jpg')">Prunus serrulata</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Prunusz szerruláta</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">japán díszcseresznye</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Quercus cerris.jpg')">Quercus cerris</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kverkusz cerrisz</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">csertölgy</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Quercus petraea.JPG')">Quercus petraea</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kverkusz petrea</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">kocsánytalan tölgy</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Quercus robur.JPG')">Quercus robur</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kverkusz robúr</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">kocsányos tölgy</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Quercus rubra.jpg')">Quercus rubra</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kverkusz rubra</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">vörös tölgy</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Robinia pseudoacacia.JPG')">Robinia    pseudoacacia</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Robínia pszeudoakácia</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">fehér akác</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Salix alba.jpg')">Salix alba</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Szálix alba</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">fehér fûz</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Salix caprea.JPG')">Salix caprea</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Szálix kaprea</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">kecskefûz</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Sophora japonica.JPG')">Sophora japonica</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Szofóra japonika</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">közönséges japánakác, kínai pagodafa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Sorbus aucuparia.jpg')">Sorbus aucuparia</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Szorbusz aukupária</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">madárberkenye</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Tilia cordata.JPG')">Tilia cordata</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Tília kordáta</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">kislevelû hárs</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Tilia platyphyllos.jpg')">Tilia platyphyllos</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Tília platifillosz</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">nagylevelû hárs</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszfak/Tilia tomentosa.JPG')">Tilia tomentosa</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Tília tomentóza</p></td>
+          <td width="281" valign="middle"><p align="left" class="style2">ezüst hárs</p></td>
+        </tr>
+      </table>
+      <h1>Lombhullató díszcserjék</h1>
+      <table border="1" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Amorpha fruticosa.JPG')">Amorpha fruticosa</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ámorfa frutikóza</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">cserjés gyalogakác</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Berberis thunbergii.JPG')">Berberis thunbergii</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Berberisz tunbergi</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">japán borbolya</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Berberis vulgaris.jpg')">Berberis vulgaris</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Berberisz    vulgárisz</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">közönséges borbolya, sóskaborbolya</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Buddleia davidii.JPG')">Buddleia davidii</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Budleja dávidi</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">illatos nyáriorgona</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Caragana arborescens.JPG')">Caragana    arborescens</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Karagána    arboreszcensz</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">sárga borsófa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Chaenomeles speciosa.JPG')">Chaenomeles    speciosa</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kenomélesz    szpecóza</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">japánbirs, skarlátvörös díszbirs</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Cornus alba.JPG')">Cornus alba</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kornusz alba</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">fehér som</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Cornus mas.JPG')">Cornus mas</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kornusz mász</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">húsos som</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Cornus sanguinea.JPG')">Cornus sanguinea</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kornusz szangvínea</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">veresgyûrûsom</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Corylus avellana.JPG')">Corylus avellana</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Korílusz avellána</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">erdei mogyoró</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Cotinus coggygria.JPG')">Cotinus coggygria</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kotínusz koggigria</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">cserszömörce</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Cotoneaster horizontalis.JPG')">Cotoneaster    horizontalis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kotoneászter    horizontálisz</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">kerti madárbirs</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Crataegus laevigata.jpg')">Crataegus laevigata</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kratégusz lévigáta</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">csere-galagonya, kétbibés galagonya</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Crataegus monogyna.JPG')">Crataegus monogyna</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kratégusz monogina</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">egybibés galagonya</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Deutzia scabra.JPG')">Deutzia scabra</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Dajcia szkabra</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">érdeslevelû gyöngyvirágcserje</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Euonymus europaeus.jpg')">Euonymus europaeus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Evonímusz    európeusz</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">csíkos kecskerágó</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Forsythia intermedia.JPG')">Forsythia x    intermedia</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Forzítia    intermédia</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">hibrid aranycserje</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Hibiscus syriacus.JPG')">Hibiscus syriacus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Hibiszkusz    szíriákusz</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">kerti mályvacserje, hibiszkusz</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Jasminum nudiflorum.jpg')">Jasminum nudiflorum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Jázminum    nudiflórum</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">téli jázmin</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Kerria japonica.jpg')">Kerria japonica</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Karria japonika</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">teltvirágú boglárkacserje</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Laburnum anagyroides.jpg')">Laburnum    anagyroides</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Laburnum    anagiroidesz</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">közönséges aranyesõ, sárgaakác</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Ligustrum ovalifolium.JPG')">Ligustrum    ovalifolium</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ligusztrum    ovalifólium</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">széleslevelû fagyal</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Ligustrum vulgare.JPG')">Ligustrum vulgare</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ligusztrum vulgáre</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">közönséges fagyal</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Lonicera fragrantissima.JPG')">Lonicera    fragrantissima</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Lonicéra    fragrantisszima</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">illatos lonc</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Lonicera tatarica.jpg')">Lonicera tatarica</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Lonicéra tatarika</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">tatárlonc</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Magnolia soulangiana.JPG')">Magnolia x    soulangiana</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Magnólia szulandzsiána</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">nagyvirágú liliomfa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Paeonia suffruticosa.JPG')">Paeonia    suffruticosa</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Peónia    szuffrutikóza</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">fás babarózsa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Philadelphus coronarius.JPG')">Philadelphus    coronarius</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Filadelfusz    koronáriusz</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">pompás jezsámen</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Prunuss triloba.jpg')">Prunus triloba</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Prunusz trilóba</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">rózsamandula, babarózsa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Rosa canina.JPG')">Rosa canina</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Róza kanina</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">vadrózsa, gyepûrózsa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Rosa rugosa.JPG')">Rosa rugosa</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Róza rugóza</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">japán rózsa, ráncoslevelû rózsa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Rosa canina.JPG')">Rosa sp. (cserje)</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Róza </p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">rózsa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Sambucus nigra.JPG')">Sambucus nigra</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Szambukusz nigra</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">fekete bodza, gyepûbodza</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Spirea vanhouttei.jpg')">Spiraea x    vanhouttei</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Spírea vanhutti</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">kerti gyöngyvesszõ</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Symphoricarpos albus.jpg')">Symphoricarpos    albus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Szimforikarposz    albusz</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">keleti hóbogyó</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Symphoricarpos orbiculatus.JPG')">Symphoricarpos    orbiculatus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Szimforikarposz    orbikulátusz</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">piros bogyóslonc</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Syringa chinensis.jpg')">Syringa x chinensis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Sziringa kinenzisz</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">kínai orgona</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Syringa vulgaris.JPG')">Syringa vulgaris</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Sziringa vulgárisz</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">kerti orgona</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Tamarix gallica.JPG')">Tamarix gallica</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Tamarix gallika</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">francia tamariska</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Tamarix tetrandra.JPG')">Tamarix tetrandra</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Tamarix tetrandra</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">keleti-tamariska, korai tamariska</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Viburnum lantana.JPG')">Viburnum lantana</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Viburnum lantána</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">ostorménfa, ostorménbangita</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Viburnum opulus.JPG')">Viburnum opulus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Viburnum opulusz</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">kányabangita</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lombhullato diszcserjek/Weigela florida.JPG')">Weigela florida</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Vejgéla florida</p></td>
+          <td width="280" valign="middle"><p align="left" class="style2">kerti rózsalonc</p></td>
+        </tr>
+      </table>
+      <h1>Kúszó cserjék</h1>
+      <table width="698" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="205" valign="top"><p><a href="javascript:opwin('../../kuszo cserjek/Campsis radicans.JPG')">Campsis radicans</a></p></td>
+          <td width="205" valign="top"><p>Kampszisz radikansz</p></td>
+          <td width="258" valign="top"><p>trombita-folyondár</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../kuszo cserjek/Clematis jackmanii.JPG')">Clematis x jackmanii</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Klemátisz dzsekmeni</p></td>
+          <td width="258" valign="middle"><p align="left" class="style2">kerti klemátisz</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../kuszo cserjek/Euonymus fortunei.jpg')">Euonymus fortunei</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Evonímusz fortunei</p></td>
+          <td width="258" valign="middle"><p align="left" class="style2">repkény-kecskerágó</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../kuszo cserjek/Hedera helix cserje.jpg')">Hedera helix (cserje)</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Hedera hélix</p></td>
+          <td width="258" valign="middle"><p align="left" class="style2">közönséges borostyán</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../kuszo cserjek/Lonicera tellmanniana.jpg')">Lonicera x tellmanniana</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Lonicéra tellmanniána</p></td>
+          <td width="258" valign="middle"><p align="left" class="style2">magyar lonc</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../kuszo cserjek/Parthenocissus tricuspidata.JPG')">Parthenocissus tricuspidata</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Partenocisszusz trikuszpidáta</p></td>
+          <td width="258" valign="middle"><p align="left" class="style2">vadszõlõ</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../kuszo cserjek/Parthenocissus quinquefolia.JPG')">Parthenocissus quinquefolia</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Partenocisszusz    kvinkvefólia</p></td>
+          <td width="258" valign="middle"><p align="left" class="style2">tapadó vadszõlõ</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="../../kuszo cserjek/Wisteria sinensis.jpg">Wisteria sinensis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Visztéria szinenzisz</p></td>
+          <td width="258" valign="middle"><p align="left" class="style2">lilaakác, kínai akác</p></td>
+        </tr>
+      </table>
+      <h1>Örökzöld Fenyõk</h1>
+      <table width="698" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../fenyok/Abies alba.JPG')">Abies alba</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ábiesz alba</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">közönséges jegenyefenyõ</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../fenyok/Abies nordmanniana.JPG')">Abies nordmanniana</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ábiesz nordmanniána</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kaukázusi jegenyefenyõ</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../fenyok/Chamaecyparis lawsoniana.JPG')">Chamaecyparis lawsoniana</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kamecipárisz lavzóniána</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">oregoni hamisciprus</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../fenyok/Juniperus chinensis.JPG')">Juniperus chinensis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Junipérusz kinenzisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kínai boróka</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../fenyok/Juniperus communis.JPG')">Juniperus communis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Junipérusz kommunisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">közönséges boróka</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../fenyok/Juniperus sabina.JPG')">Juniperus sabina</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Junipérusz szabina</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">nehézszagú boróka</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../fenyok/Juniperus virginiana .jpg')">Juniperus virginiana</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Junipérusz virdzsiniána</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">virginiai boróka</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../fenyok/Picea abies.JPG')">Picea abies</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Pícea ábiesz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">közönséges lucfenyõ</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../fenyok/Picea pungens.jpg')">Picea pungens</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Pícea pungensz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">szürke lucfenyõ, szúrós luc</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../fenyok/Pinus mugo.jpg')">Pinus mugo</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Pínusz mugo</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">törpefenyõ</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../fenyok/Pinus nigra.JPG')">Pinus nigra</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Pínusz nigra</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">feketefenyõ</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../fenyok/Pinus strobus.jpg')">Pinus strobus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Pínusz sztróbusz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">selyemfenyõ</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../fenyok/Pinus sylvestris.JPG')">Pinus sylvestris</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Pínusz szilvesztrisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">erdeifenyõ</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../fenyok/Pinus wallichiana.JPG')">Pinus wallichiana</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Pínusz vallikiána</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">himalájai selyemfenyõ</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../fenyok/Platycladus orientalis.JPG')">Platycladus orientalis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Platikládusz orientálisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">keleti tuja, életfa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../fenyok/Pseudotsuga menziesii.jpg')">Pseudotsuga menziesii</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Pszeudocsuga menzieszi</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">duglászfenyõ</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../fenyok/Taxus baccata.jpg')">Taxus baccata</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Taxusz bakkáta</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">tiszafa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../fenyok/Thuja occidentalis.JPG')">Thuja occidentalis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Tuja okcidentálisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">nyugati tuja</p></td>
+        </tr>
+      </table>
+      <h1>Lombhullató fenyõk</h1>
+      <table width="699" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../fenyok/Ginkgo biloba.jpg')">Ginkgo biloba</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ginko bilóba</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">páfrányfenyõ, ginkó</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../fenyok/Larix decidua.jpg')">Larix decidua</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Lárix decidua</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">európai vörösfenyõ</p></td>
+        </tr>
+      </table>
+      <h1>Örökzöld lomblevelû dísznövények</h1>
+      <table width="699" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lomblevelu orokzoldek/Aucuba japonica.jpg')">Aucuba japonica</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Aukuba japonika</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">japán babérsom</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lomblevelu orokzoldek/Berberis julianae.JPG')">Berberis julianae</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Berberisz juliáné</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Júlia-borbolya</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lomblevelu orokzoldek/Buxus sempervirens.JPG')">Buxus sempervirens</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Buxusz szempervírensz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">örökzöld puszpáng</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lomblevelu orokzoldek/Cotoneaster dammeri.jpg')">Cotoneaster dammeri</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kotoneászter dammeri</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">szõnyegmadárbirs</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lomblevelu orokzoldek/Euonymus japonicus.JPG')">Euonymus japonicus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Evonímusz japonikusz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">japán kecskerágó</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lomblevelu orokzoldek/Ilex aquifolium.JPG')">Ilex aquifolium</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ilex akvifólium</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">közönséges magyal</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lomblevelu orokzoldek/Lonicera pileata.JPG')">Lonicera pileata</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Lonicéra pileáta</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">aprólevelû lonc, törpe lonc</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lomblevelu orokzoldek/Mahonia aquifolium.JPG')">Mahonia aquifolium</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Mahónia akvifólium</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti mahónia</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lomblevelu orokzoldek/Prunus laurocerasus.JPG')">Prunus laurocerasus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Prunusz laurocerázusz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">babérmeggy</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lomblevelu orokzoldek/Pyracantha coccinea.JPG')">Pyracantha coccinea</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Pirakanta kokcínea</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">tûztövis</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../lomblevelu orokzoldek/Viburnum rhytidophyllum.JPG')">Viburnum rhytidophyllum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Viburnum ritidofillum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">örökzöld bangita</p></td>
+        </tr>
+      </table>
+      <h1>Levéldísznövények</h1>
+      <h2>Cserepes levéldísznövények</h2>
+      <table width="698" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Aglaonema commutatum.JPG')">Aglaonema    commutatum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Aglaonéma kommutátum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">változó rákvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Aglaonema modestum.JPG')">Aglaonema modestum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Aglaonéma    modesztum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">rákvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Araucaria heterophylla.JPG')">Araucaria    heterophylla</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Araukária    heterophylla</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">szobafenyõ</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Begonia rex-cultorum.JPG')">Begonia    rex-cultorum csoport</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Begónia rex    kultórum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">király-begónia</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Codiaeum variegatum.JPG')">Codiaeum variegatum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kodiéum variegátum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">csodacserje, kroton</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Cordyline terminalis.JPG')">Cordyline    terminalis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kordilíne    terminálisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">színeslevelû bunkóliliom</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Cyperus albostriatus.JPG')">Cyperus    albostriatus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Cipérusz    albosztriátusz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">törpe palka</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Cyperus alternifolius.jpg')">Cyperus    alternifolius</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Cipérusz    alternifóliusz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">vízipálma</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Dieffenbachia maculata.JPG')">Dieffenbachia    maculata</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Diffenbahhia    makuláta</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">foltos buzogányvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Dracaena deremensis.JPG')">Dracaena deremensis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Dracéna    deremenzisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">sávos dracéna, sávos sárkányfa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Dracaena fragrans.JPG')">Dracaena fragrans</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Dracéna fragransz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">illatos sárkányfa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Dracaena marginata.JPG')">Dracaena marginata</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Dracéna margináta</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">tarka sárkányfa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Fatshedera lizei.JPG')">Fatshedera lizei</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Facshedera lizei</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">borostyánarália, szõlõborostyán</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Fatsia japonica.jpg')">Fatsia japonica</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Faccsia japonika</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">szoba-arália</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Ficus benjamina.JPG')">Ficus benjamina</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Fikusz benjamína</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">csüngõ ágú fikusz</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Ficus elastica.jpg')">Ficus elastica</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Fikusz elasztika</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">szobafikusz</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Ficus lyrata.JPG')">Ficus lyrata</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Fikusz liráta</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">lantlevelû fikusz</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Monstera deliciosa.jpg')">Monstera deliciosa</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Monsztéra    delicióza</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">könnyezõpálma, filodendron</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Nolina recurvata.JPG')">Nolina recurvata</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Nolina rekurváta</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">buzogányfa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Pandanus veitchii.jpg')">Pandanus veitchii</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Pandánusz vejcsi</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Veitch-csavarpálma</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Peperomia argyreia.jpg')">Peperomia argyreia</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Peperómia argireja</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">márványlevelû törpebors</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Peperomia caperata.jpg')">Peperomia caperata</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Peperómia kaperáta</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">ráncos törpebors</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Peperomia obtusifolia.jpg')">Peperomia    obtusifolia</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Peperómia    obtuzifólia</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">tompalevelû törpebors</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Pilea cadierei.jpg')">Pilea cadierei</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Pílea kadierei</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">ezüst pílea, üvegcsalán</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Sansevieria trifasciata.jpg')">Sansevieria    trifasciata</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Szanzevéria    trifaszciáta</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">tigrislevél, anyósnyelv</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Schefflera actinophylla.JPG')">Schefflera    actinophylla</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Sefflera    aktinofilla</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Brassai-sugárarália</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Schefflera arboricola.JPG')">Schefflera    arboricola</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Schefflera    arborikóla</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kislevelû sugárarália</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes leveldisznovenyek/Yucca elephantipes.JPG')">Yucca elephantipes</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Jukka elefantipesz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">óriás pálmaliliom</p></td>
+        </tr>
+      </table>
+      <h2>Ámpolna levéldísznövények</h2>
+      <table width="696" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../ampolnanovenyek/Chlorophytum comosum.JPG')">Chlorophytum    comosum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Klorofítum komózum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">csokrosinda</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../ampolnanovenyek/Cissus antarctica.JPG')">Cissus antarctica</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Cisszusz    antarktika</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kenguruszõlõ</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../ampolnanovenyek/Cissus rhombifolia.JPG')">Cissus rhombifolia</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Cisszusz    rombifólia</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">hármaslevelû kúszóka</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../ampolnanovenyek/Epipremnum aureum.JPG')">Epipremnum aureum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Epipremnum aureum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">aranyos szobafutóka</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../ampolnanovenyek/Ficus pumila.jpg')">Ficus pumila</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Fikusz pumila</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">ámpolnafikusz</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../ampolnanovenyek/Hedera canariensis.JPG')">Hedera canariensis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Hedera    kanarienzisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kanári-borostyán</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../ampolnanovenyek/Hedera helix cserepes.JPG')">Hedera helix    (cserepes)</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Hedera hélix</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">borostyán</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../ampolnanovenyek/Peperomia serpens.JPG')">Peperomia serpens</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Peperómia    szerpensz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kígyózó törpebors</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../ampolnanovenyek/Philodendron scandens.JPG')">Philodendron    scandens</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Filodendron    szkandensz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">futófilodendron, szívlevelû filodendron</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../ampolnanovenyek/Syngonium podophyllum.JPG')">Syngonium    podophyllum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Szingónium    podofillum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">üvegházi nyíllevél</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../ampolnanovenyek/Tradescantia albiflora.JPG')">Tradescantia    albiflora</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Tradeskancia    albiflóra</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">közönséges pletyka</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../ampolnanovenyek/Tradescantia zebrina.JPG')">Tradescantia    zebrina</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Tradeskancia    zebrina</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">tarka pletyka, zebrapletyka</p></td>
+        </tr>
+      </table>
+      <h2>Páfrányok</h2>
+      <table width="698" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../pafranyok/Adiantum tenerum.JPG')">Adianthum tenerum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Adiantum tenerum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">finomlombú vénuszfodorka</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../pafranyok/Asplenium nidus.JPG')">Asplenium nidus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Aszplénium nídusz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">madárfészek-páfrány</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../pafranyok/Cyrtomium falcatum.JPG')">Cyrtomium falcatum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Cirtómium falkátum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">sarlós babérpáfrány, sarlós pajzsika</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../pafranyok/Nephrolepis cordifolia.JPG')">Nephrolepis    cordifolia</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Nefrolépisz    kordifólia</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">lépcsõs szobapáfrány</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../pafranyok/Nephrolepis exaltata.JPG')">Nephrolepis    exaltata</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Nefrolépisz    egzaltáta</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">szeldelt levelû szobapáfrány</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../pafranyok/Platycerium bifurcatum.JPG')">Platycerium    bifurcatum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Platcérium    bifurkátum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">villás szarvasagancs-páfrány</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../pafranyok/Pteris cretica.JPG')">Pteris cretica</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ptérisz kretika</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">krétai szárnyaspáfrány, szalagpáfrány</p></td>
+        </tr>
+      </table>
+      <h2>Pálmák</h2>
+      <table width="701" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../palmak/Chamaedorea elegans.JPG')">Chamaedorea elegans</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Samedórea elegansz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">mexikói hegyipálma</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../palmak/Chamaerops humilis.jpg')">Chamaerops humilis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Sameropsz humilisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">törpe lószõrpálma</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../palmak/Howea forsteriana.jpg')">Howea forsteriana</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Hóvea forszteriána</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kenciapálma</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../palmak/Phoenix canariensis.JPG')">Phoenix canariensis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Fõnix kanarienzisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kanári-fõnixpálma</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../palmak/Trachicarpus fortunei.JPG')">Trachycarpus    fortunei</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Trahikarpusz    fortunei</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kínai kenderpálma</p></td>
+        </tr>
+      </table>
+      <h2>Broméliák</h2>
+      <table width="696" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../bromeliak/Aechmea fasciata.JPG')">Aechmea fasciata</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ehmea faszciáta</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">csíkolt lándzsarózsa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../bromeliak/Ananas comosus.JPG')">Ananas comosus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ananász komózusz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">ananász</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../bromeliak/Billbergia decora.JPG')">Billbergia decora</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Billbergia dekóra</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">díszes billbergia</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../bromeliak/Cryptanthus acaulis.JPG')">Cryptanthus acaulis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kriptantusz    akaulisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">csíkos levélcsillag</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../bromeliak/Vriesea splendens.jpg')">Vriesea splendens</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Vrízea szplendensz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">sötétsávos vrízea</p></td>
+        </tr>
+      </table>
+      <h2>Növényházi vágott zöldek</h2>
+      <table width="695" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../vagott zoldek/Asparagus densiflorus.jpg')">Asparagus    densiflorus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Aszparágusz    denziflórusz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">tûlevelû aszparágusz, klárisfû</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../vagott zoldek/Asparagus falcatus.jpg')">Asparagus falcatus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Aszparágusz falkátusz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">sarlós díszspárga</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../vagott zoldek/Asparagus setaceus.JPG')">Asparagus setaceus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Aszparágusz    szetáceusz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">fátyolaszparágusz</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../vagott zoldek/Aspidistra elatior.JPG')">Aspidistra elatior</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Aszpidisztra    elácior</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kukoricalevél</p></td>
+        </tr>
+      </table>
+      <h2>Kaktuszok, pozsgások</h2>
+      <table width="700" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../kaktuszok/Agave americana.jpg')">Agave americana</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Agávé amerikána</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">amerikai agávé</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../kaktuszok/Aloe arborescens.jpg')">Aloë arborescens</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Áloé arboreszcensz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">fás aloé</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../kaktuszok/Mamillaria sp.JPG')">Mamillaria sp.</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Mamillária</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">szemölcskaktusz fajok</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../kaktuszok/Opuntia sp.jpg')">Opuntia sp.</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Opuncia</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">medvetalpkaktusz fajok</p></td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      <h1>Cserepes virágzó dísznövények</h1>
+      <table width="700" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Anthurium hortulanum.JPG')">Anthurium x    hortulanum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Antúrium    hortulánum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kis flamingóvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Begonia hiemalis.jpg')">Begonia x hiemalis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Begónia hiemálisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">téli begónia hibridek</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Begonia tuberhybrida.JPG')">Begonia tuberhybrida-fajtacsoport</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Begónia    tuberhibrida</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">gumós begónia</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Calceolaria herbeohybrida.jpg')">Calceolaria    herbeohybrida</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kalceolária    herbeohibrida</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">tarka papucsvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Clivia miniata.jpg')">Clivia miniata</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Klívia miniáta</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">klívia, pompás kafferliliom</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Cyclamen persicum.JPG')">Cyclamen persicum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ciklámen perzikum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">perzsa- vagy szobai ciklámen</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Euphorbia pulcherrima.jpg')">Euphorbia    pulcherrima</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Euforbia    pulherrima</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">mikulásvirág, karácsonyi csillag</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Fuchsia hybrida.JPG')">Fuchsia hybrida</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Fukszia hibrida</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">fukszia</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Hatiora gaertneri.jpg')">Hatiora gaertneri</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Hatiora gertneri</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">húsvéti kaktusz</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Hibiscus rosa-sinensis.jpg')">Hibiscus    rosa-sinensis</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Hibiszkusz    róza-szinenzisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kínai hibiszkusz</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Hippeastrum hybridum.jpg')">Hippeastrum    hybridum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Hippeasztrum    hibridum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">amarillisz, lovagcsillag</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Hydrangea macrophylla.jpg')">Hydrangea    macrophylla</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Hidrangea    makrofilla</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti hortenzia</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Impatiens uj-guineai.JPG')">Impatiens    új-guineai hibridek</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Impátiensz    új-gvíneai hibridek</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">nenyúljhozzám, nebáncsvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Kalanchoe blossfeldiana.JPG')">Kalanchoë    blossfeldiana</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kalanhoé    blosszfeldiána</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">korallvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Nerium oleander.JPG')">Nerium oleander</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Nérium oleánder</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">leánder</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Pelargonium grandiflorum.jpg')">Pelargonium    grandiflorum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Pelargónium    grandiflorum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">angol muskátli</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Pelargonium hortorum.JPG')">Pelargonium x    hortorum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Pelargónium    hortórum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">muskátli</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Pelargonium peltatum.JPG')">Pelargonium    peltatum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Pelargónium    peltátum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">futó muskátli</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Pericallis cruenta.jpg')">Pericallis cruenta</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Perikallisz    kruenta</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">cinerária</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Primula malacoides.jpg')">Primula malacoides</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Primula    malakoidesz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">emeletes primula</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Primula obconica.JPG')">Primula obconica</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Primula obkonika</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">szobai primula</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Primula polyantha.jpg')">Primula x polyantha</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Primula polianta</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">sokvirágú kankalin</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Ranunculus hibridek.JPG')">Ranunculus hibridek</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Ranunkulusz hibridek</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">boglárka</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Rhododendron hibridek.JPG')">Rhododendron    hibridek</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Rododendron    hibridek</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">azálea</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Saintpaulia ionantha.JPG')">Saintpaulia    ionantha</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Szanpaulia jonanta</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">afrikai ibolya, fokföldi-ibolya</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Schlumbergera truncata.jpg')">Schlumbergera    truncata</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Slumbergera    trunkáta</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">karácsonyi kaktusz</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Sinningia speciosa.JPG')">Sinningia speciosa</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Szinningia    specióza</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">gloxinia, csuporka</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../cserepes viragzok/Spathyphyllum wallisii.JPG')">Spathiphyllum    wallisii</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Spatifillum    vallízi</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">vitorlavirág</p></td>
+        </tr>
+      </table>
+      <h1>&nbsp;</h1>
+      <h1>Növényházi vágott virágok</h1>
+      <table width="697" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../novenyhazi vagott virag/Alstroemeria hybrida.JPG')">Alstroemeria    hybrida</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Alsztroméria    hibrida</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">inkaliliom</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../novenyhazi vagott virag/Anthurium cultorum.jpg')">Anthurium x    cultorum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Antúrium kultórum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">nagy flamingóvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../novenyhazi vagott virag/Dendranthema grandiflorum.jpg')">Dendranthema x    grandiflorum (növényházi)</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Dendrantéma grandiflórum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">krizantém</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../novenyhazi vagott virag/Dianthus caryophyllus.JPG')">Dianthus    caryophyllus</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Diantusz    kariofillusz </p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">szegfû</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../novenyhazi vagott virag/Eustoma grandiflora.JPG')">Eustoma    grandiflorum</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Eusztóma    grandiflórum</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">préritárnics, lizike</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../novenyhazi vagott virag/Freesia refracta.jpg')">Freesia refracta</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Frézia refrakta</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">visszahajló frézia, csipkevirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../novenyhazi vagott virag/Gerbera jamesonii.JPG')">Gerbera jamesonii</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Gerbera dzsémzóni</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">gerbera, transzváli-százszorszép</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../novenyhazi vagott virag/Rosa spnovenyhazi.JPG')">Rosa sp. (növényházi)</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Róza </p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">rózsa</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../novenyhazi vagott virag/Strelitzia reginae.JPG')">Strelitzia reginae</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Strelícia reginé</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">pompás papagájvirág, paradicsommadár-virág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../novenyhazi vagott virag/Zantedeschia aethiopica.JPG')">Zantedeschia    aethiopica</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Zantedésia    etiópika</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kála, fehér tölcsérvirág</p></td>
+        </tr>
+      </table>
+      <h2>Orchideák</h2>
+      <table width="697" border="1" cellpadding="0" cellspacing="0">
+
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../novenyhazi vagott virag/Cattleya hibridek.jpg')">Cattleya hibridek</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Kattleja hibridek</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">bugakosbor</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../novenyhazi vagott virag/Cymbidium hibridek.jpg')">Cymbidium hybridek</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Cimbídium hibridek</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">csónakorchidea</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../novenyhazi vagott virag/Dendrobium hibridek.jpg')">Dendrobium hibridek</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Dendróbium hibridek</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">vesszõsorchidea</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../novenyhazi vagott virag/Paphiopedilum hibridek.jpg')">Paphiopedilum    hibridek</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Pafiopedilum    hibridek</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Vénusz-papucs orchidea</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../novenyhazi vagott virag/Phalaenopsis hibridek.jpg')">Phalaenopsis    hibridek</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Falenopszisz hibridek</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">lepkeorchideák</p></td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      <h1>Hajtatás</h1>
+      <table width="691" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../hajtatas/Antirrhinum majus hajtatott.jpg')">Antirrhinum majus (hajtatott)</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Antirrhínum májusz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti oroszlánszáj</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../hajtatas/Convallaria majalis hajtatott.JPG')">Convallaria majalis (hajtatott)</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Konvallária    majálisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">májusi gyöngyvirág</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../hajtatas/Crocus vernus hajtatott.jpg')">Crocus vernus (hajtatott)</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Krókusz vernusz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">tavaszi sáfrány</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../hajtatas/Gladiolus gandavensis hajtatott.JPG')">Gladiolus x gandavensis (hajtatott)</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Gladiólusz    gandavenzisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti kardvirág, kerti gladiólusz</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../hajtatas/Hyacinthus orientalis hajtatott.jpg')">Hyacinthus orientalis    (hajtatott)</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Jácintusz    orientálisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti jácint</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../hajtatas/Iris hollandica.jpg')">Iris hollandica </a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Írisz hollandika</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">holland nõszirom</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../hajtatas/Lilium hibridek hajtatott.JPG')">Lilium hibridek    (hajtatott)</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Lilium hibridek</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">hibrid liliom</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../hajtatas/Narcissus sp hajtatott.JPG')">Narcissus sp. (hajtatott)</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Nárcisszusz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">nárciszok</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../hajtatas/Tulipa hibridek hajtatott.jpg')">Tulipa hibridek (hajtatott)</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Tulipa hibridek</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti tulipán</p></td>
+        </tr>
+        <tr>
+          <td width="205" valign="middle"><p align="left" class="style2"><a href="javascript:opwin('../../hajtatas/Syringa vulgaris hajtatott.jpg')">Syringa vulgaris (hajtatott)</a></p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">Sziringa vulgárisz</p></td>
+          <td width="205" valign="middle"><p align="left" class="style2">kerti orgona</p></td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      <p>&nbsp; </p>
+      <p>&nbsp; </p>
+      <p>&nbsp; </p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp; </p>
+      <p>&nbsp;</p>
+      <p>&nbsp; </p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p align="center">&nbsp;</p>
+    <p align="center">&nbsp; </p></td>
+  </tr>
+</table>
+<!-- InstanceEndEditable --></div>
+<img src="../../images/kszi.gif" alt="logo" width="120" height="82">
+</body>
+<!-- InstanceEnd --></html>

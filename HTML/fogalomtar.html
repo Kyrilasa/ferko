@@ -1,0 +1,1433 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="undefined"><!-- InstanceBegin template="/Templates/sablon.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<SCRIPT LANGUAGE="JavaScript1.1">
+<!--
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+<script src="../script.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Fogalomtár</title>
+<!-- InstanceEndEditable -->
+<link href="../style.css" rel="stylesheet" type="text/css">
+<!-- InstanceBeginEditable name="head" -->
+
+
+<style type="text/css">
+<!--
+.style2 {font-size: large}
+-->
+</style>
+<!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+a:link {
+	text-decoration: none;
+	color: #FF0000;
+}
+a:visited {
+	text-decoration: none;
+	color: #FF0000;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+#Layer1 {
+	position:absolute;
+	width:335px;
+	height:480px;
+	z-index:1;
+	left: 240px;
+	top: 130px;
+}
+#Layer2 {
+	position:absolute;
+	width:338px;
+	height:487px;
+	z-index:1;
+	overflow: visible;
+}
+-->
+</style></head>
+<body bgcolor="#FFFFFF" onLoad="MM_preloadImages('../images/nyitolap_2.gif','../images/alapismeretek_2.gif','../images/lagyszaruak_2.gif','../images/fasszaruak_2.gif','../images/novenyhaziak_2.gif','../images/tablazatok_2.gif','../images/nevmutatok_2.gif','../images/fogalomtar_2.gif','../images/onellenorzes_2.gif','../images/kilepes_2.gif','../images/vissza_2.gif')">
+<div class="menu_layer" id="menu">
+  <table border="0" cellpadding="0" cellspacing="10" background="../images/menuback.jpg">
+    <tr>
+      <td><a href="../nyitolap.html" target="_top" onClick="MM_nbGroup('down','group1','nyitolap','../images/nyitolap_2.gif',1)" onMouseOver="MM_nbGroup('over','nyitolap','../images/nyitolap_2.gif','../images/nyitolap_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="nyitolap" src="../images/nyitolap_1.gif" border="0" alt="Nyitólap" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="alapismeretek/alapismeretek.html" target="_top" onClick="MM_nbGroup('down','group1','Alapismeretek','../images/alapismeretek_2.gif',1)" onMouseOver="MM_nbGroup('over','Alapismeretek','../images/alapismeretek_2.gif','../images/alapismeretek_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img src="../images/alapismeretek_1.gif" alt="alapismeretek" name="Alapismeretek" border="0" onload=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="lagyszaruak/lagyszaruak.html" target="_top" onClick="MM_nbGroup('down','group1','lagyszaruak','../images/lagyszaruak_2.gif',1)" onMouseOver="MM_nbGroup('over','lagyszaruak','../images/lagyszaruak_2.gif','../images/lagyszaruak_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="lagyszaruak" src="../images/lagyszaruak_1.gif" border="0" alt="Lágyszárúak" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="fasszaruak/fasszaruak.html" target="_top" onClick="MM_nbGroup('down','group1','fasszaruak','../images/fasszaruak_2.gif',1)" onMouseOver="MM_nbGroup('over','fasszaruak','../images/fasszaruak_2.gif','../images/fasszaruak_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="fasszaruak" src="../images/fasszaruak_1.gif" border="0" alt="Fásszárúak" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="novenyhaziak/novenyhaziak.html" target="_top" onClick="MM_nbGroup('down','group1','novenyhaziak','../images/novenyhaziak_2.gif',1)" onMouseOver="MM_nbGroup('over','novenyhaziak','../images/novenyhaziak_2.gif','../images/novenyhaziak_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="novenyhaziak" src="../images/novenyhaziak_1.gif" border="0" alt="Nyövényháziak" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="tablazatok/tablazatok.html" target="_top" onClick="MM_nbGroup('down','group1','tablazatok','../images/tablazatok_2.gif',1)" onMouseOver="MM_nbGroup('over','tablazatok','../images/tablazatok_2.gif','../images/tablazatok_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="tablazatok" src="../images/tablazatok_1.gif" border="0" alt="Táblázatok" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="nevmutato/nevmutato.html" target="_top" onClick="MM_nbGroup('down','group1','nevmutatok','../images/nevmutatok_2.gif',1)" onMouseOver="MM_nbGroup('over','nevmutatok','../images/nevmutatok_2.gif','../images/nevmutatok_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="nevmutatok" src="../images/nevmutatok_1.gif" border="0" alt="Névmutatók" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="fogalomtar.html" target="_top" onClick="MM_nbGroup('down','group1','fogalomtar','../images/fogalomtar_2.gif',1)" onMouseOver="MM_nbGroup('over','fogalomtar','../images/fogalomtar_2.gif','../images/fogalomtar_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="fogalomtar" src="../images/fogalomtar_1.gif" border="0" alt="Fogalomtár" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../teszt/onellenorzes.html" target="_top" onClick="MM_nbGroup('down','group1','onellenorzes','../images/onellenorzes_2.gif',1)" onMouseOver="MM_nbGroup('over','onellenorzes','../images/onellenorzes_2.gif','../images/onellenorzes_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="onellenorzes" src="../images/onellenorzes_1.gif" border="0" alt="Önellenõrzés" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="javascript:window.close()" target="_top" onClick="MM_nbGroup('down','group1','kilepes','../images/kilepes_2.gif',1)" onMouseOver="MM_nbGroup('over','kilepes','../images/kilepes_2.gif','../images/kilepes_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="kilepes" src="../images/kilepes_1.gif" border="0" alt="" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="javascript:history.go(-1)" target="_top" onClick="MM_nbGroup('down','group1','vissza','../images/vissza_2.gif',1)" onMouseOver="MM_nbGroup('over','vissza','../images/vissza_2.gif','../images/vissza_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="vissza" src="../images/vissza_1.gif" border="0" alt="vissza" onLoad=""></a></td>
+    </tr>
+  </table>
+</div>
+<div class="top_layer" id="top">
+  <div align="center"><img src="../images/fejlec.jpg" alt="fejlec" width="781" height="79"></div>
+</div>
+<div class="text_layer" id="text" scrolling="no"><!-- InstanceBeginEditable name="text" -->
+<table width="674" border="0" cellpadding="0" cellspacing="0">
+  <!--DWLayoutTable-->
+  
+  <tr>
+    <td width="674" height="37" valign="top"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><!--  		@page { size: 21cm 29.7cm; margin: 2cm }  		P { margin-bottom: 0.21cm }  	-->
+    <h1 ALIGN="center"><strong>Latin nevek szótára</strong></h1></td>
+  </tr>
+  <tr>
+    <td height="450" align="center" valign="top"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+      <table border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#000000">
+        <col width="135">
+        <col width="372">
+        <tr height="21">
+          <td height="21" width="238"><span class="style2">abies</span></td>
+          <td width="440"><span class="style2">’régi latin név’</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">acerifolia</span></td>
+          <td><span class="style2">juharlevelû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">acre</span></td>
+          <td><span class="style2">borsos</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">actinophylla</span></td>
+          <td><span class="style2">sugaras levelû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">aethiopica</span></td>
+          <td><span class="style2">etiópiai</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">ajacis</span></td>
+          <td><span class="style2">Ajax: görög hõs neve</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">alba/ -um/ -us</span></td>
+          <td><span class="style2">fehér</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">albiflora</span></td>
+          <td><span class="style2">fehérvirágú</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">albostriatus</span></td>
+          <td><span class="style2">fehércsíkos</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">alcicorne</span></td>
+          <td><span class="style2">szarvasagancsszerû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">alpestris</span></td>
+          <td><span class="style2">alpesi</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">alpina /-um/-us</span></td>
+          <td><span class="style2">alpesi</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">alternifolius</span></td>
+          <td><span class="style2">váltakozó levelû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">altissima</span></td>
+          <td><span class="style2">legmagasabb</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">ambigua</span></td>
+          <td><span class="style2">bizonytalan, kétséges</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">amellus</span></td>
+          <td><span class="style2">csillagvirág</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">americana</span></td>
+          <td><span class="style2">amerikai</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">amoena</span></td>
+          <td><span class="style2">gyönyörû, bájos</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">anagyroides</span></td>
+          <td><span class="style2">szagos</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">angustifolia</span></td>
+          <td><span class="style2">keskenylevelû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">annua/ -um/ -us</span></td>
+          <td><span class="style2">egyéves</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">antarctica</span></td>
+          <td><span class="style2">déli féltekén honos</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">aquifolium</span></td>
+          <td><span class="style2">szúróslevelû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">arborescens</span></td>
+          <td><span class="style2">megfásodó</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">arboricola</span></td>
+          <td><span class="style2">fánlakó</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">arendsii</span></td>
+          <td><span class="style2">Arends-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">argentea</span></td>
+          <td><span class="style2">ezüst</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">argyreia</span></td>
+          <td><span class="style2">ezüstös</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">aristata</span></td>
+          <td><span class="style2">szálkás</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">armeniacum</span></td>
+          <td><span class="style2">örmény</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">aucuparia</span></td>
+          <td><span class="style2">madárcsalogató</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">aurea/ -um</span></td>
+          <td><span class="style2">arany</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">avellana</span></td>
+          <td><span class="style2">vesszõs, szárszerû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">baccata</span></td>
+          <td><span class="style2">bogyós</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">barbata/-um/-us</span></td>
+          <td><span class="style2">szakállas</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">benjamina</span></td>
+          <td><span class="style2">Benjamin-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">betulus</span></td>
+          <td><span class="style2">nyírszerû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">bifurcatum</span></td>
+          <td><span class="style2">kétágú, kettéágazódó</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">bignonioides</span></td>
+          <td><span class="style2">bignóniához hasonló</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">biloba</span></td>
+          <td><span class="style2">kétkaréjú</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">bipinnatus</span></td>
+          <td><span class="style2">kétszeresen szárnyas</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">blossfeldiana</span></td>
+          <td><span class="style2">Blossfeld-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">bracteatum</span></td>
+          <td><span class="style2">fedõleveles, murvaleveles</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">byzantina</span></td>
+          <td><span class="style2">bizánci</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">cadierei</span></td>
+          <td><span class="style2">Cadier-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">camara</span></td>
+          <td><span class="style2">régi dél-amerikai név</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">campestre</span></td>
+          <td><span class="style2">mezei, parlagi</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">canariensis</span></td>
+          <td><span class="style2">kanári-szigeteki</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">candidum</span></td>
+          <td><span class="style2">hófehér</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">canina</span></td>
+          <td><span class="style2">harapós</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">caperata</span></td>
+          <td><span class="style2">bozontos</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">caprea</span></td>
+          <td><span class="style2">kecske</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">carnea</span></td>
+          <td><span class="style2">hússzínû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">carpatica</span></td>
+          <td><span class="style2">kárpáti</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">caucasica</span></td>
+          <td><span class="style2">kaukázusi</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">caudatus</span></td>
+          <td><span class="style2">farkos</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">cerris</span></td>
+          <td><span class="style2">cserjeszerû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">cheirii</span></td>
+          <td><span class="style2">a növény arab neve</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">chinensis</span></td>
+          <td><span class="style2">kínai</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">cineraria</span></td>
+          <td><span class="style2">világos hamuszürke</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">coccinea/ -um/ -us</span></td>
+          <td><span class="style2">skarlátvörös</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">coggygria</span></td>
+          <td><span class="style2">régi görög név</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">colurna</span></td>
+          <td><span class="style2">mogyoró</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">communis</span></td>
+          <td><span class="style2">közönséges, egyszerû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">commutatum</span></td>
+          <td><span class="style2">felcserélt</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">comosum/ -us</span></td>
+          <td><span class="style2">üstökös, bóbitás</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">cordata</span></td>
+          <td><span class="style2">szív alakú</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">cordifolia</span></td>
+          <td><span class="style2">szívlevelû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">coronarius</span></td>
+          <td><span class="style2">koronás, koszorús</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">crassifolia</span></td>
+          <td><span class="style2">kemény, húsos levelû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">cretica</span></td>
+          <td><span class="style2">krétai</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">cristata</span></td>
+          <td><span class="style2">taréjos, kakastaréjszerû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">cruenta</span></td>
+          <td><span class="style2">vérpiros</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">cultorum</span></td>
+          <td><span class="style2">tenyésztésbõl származó</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">davidii</span></td>
+          <td><span class="style2">Dávid-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">decidua</span></td>
+          <td><span class="style2">lehulló, lombhullató</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">decora</span></td>
+          <td><span class="style2">mutatós, dekoratív</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">deliciosa</span></td>
+          <td><span class="style2">ízletes</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">densiflorus</span></td>
+          <td><span class="style2">tömött virágzatú</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">deremensis</span></td>
+          <td><span class="style2">Deremából származó (Afrika)</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">diffusus</span></td>
+          <td><span class="style2">kiterjedt, terjengõs</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">drummondii</span></td>
+          <td><span class="style2">Drummond-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">dumosus</span></td>
+          <td><span class="style2">bozótos, bokros</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">elastica</span></td>
+          <td><span class="style2">rugalmas, nyúlékony</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">elatior</span></td>
+          <td><span class="style2">magasabb</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">elegans</span></td>
+          <td><span class="style2">kecses, finom</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">elephantipes</span></td>
+          <td><span class="style2">elefántlábú</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">elwesii</span></td>
+          <td><span class="style2">Elwes-féle (angol botanikus)</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">erecta</span></td>
+          <td><span class="style2">felálló, merev</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">ericoides</span></td>
+          <td><span class="style2">erikaszerû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">erinus</span></td>
+          <td><span class="style2">tüskés, sünszerû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">europaeum/ -us</span></td>
+          <td><span class="style2">európai</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">exaltata</span></td>
+          <td><span class="style2">kimagasló, nagyranövõ</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">excelsa</span></td>
+          <td><span class="style2">emelt, magas</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">excelsior</span></td>
+          <td><span class="style2">magasra növõ</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">falcatum/ -us</span></td>
+          <td><span class="style2">sarló alakú</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">farinacea</span></td>
+          <td><span class="style2">lisztes bevonatú</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">fasciata</span></td>
+          <td><span class="style2">csíkos, szalagos</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">ficoidea</span></td>
+          <td><span class="style2">fügeszerû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">filipendulina</span></td>
+          <td><span class="style2">hosszan lelógó</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">flava/-um/-us</span></td>
+          <td><span class="style2">sárga</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">florida</span></td>
+          <td><span class="style2">floridai</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">forsteri</span></td>
+          <td><span class="style2">Forster-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">forsteriana</span></td>
+          <td><span class="style2">Forster-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">fortunei</span></td>
+          <td><span class="style2">Fortune-féle (angol botanikus)</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">fragrans</span></td>
+          <td><span class="style2">jószagú, illatos</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">fragrantissima</span></td>
+          <td><span class="style2">legillatosabb</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">fruticosa</span></td>
+          <td><span class="style2">cserjés, bokros</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">fulgida</span></td>
+          <td><span class="style2">fényes, ragyogó</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">fulva</span></td>
+          <td><span class="style2">barna, narancs-piros</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">gaertneri</span></td>
+          <td><span class="style2">Gaertner-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">galeobdolon</span></td>
+          <td><span class="style2">sisakot viselõ</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">gallica</span></td>
+          <td><span class="style2">francia</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">generalis</span></td>
+          <td><span class="style2">általános</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">germanica</span></td>
+          <td><span class="style2">német</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">glauca</span></td>
+          <td><span class="style2">kékes</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">globosa</span></td>
+          <td><span class="style2">gömbölyû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">glutinosa</span></td>
+          <td><span class="style2">mézgás, ragadós</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">grandiflora/ -um</span></td>
+          <td><span class="style2">nagyvirágú</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">grandis</span></td>
+          <td><span class="style2">nagy</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">helix</span></td>
+          <td><span class="style2">tekert, spirális</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">herbeohybrida</span></td>
+          <td><span class="style2">fûzöld-hibrid</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">herbstii</span></td>
+          <td><span class="style2">Herbst-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">heterophylla</span></td>
+          <td><span class="style2">változó levelû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">hiemalis</span></td>
+          <td><span class="style2">téli</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">hippocastanum</span></td>
+          <td><span class="style2">lógesztenye</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">hirta</span></td>
+          <td><span class="style2">érdes, rövidszõrû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">hispanica</span></td>
+          <td><span class="style2">spanyol</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">horizontalis</span></td>
+          <td><span class="style2">vízszintes</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">hortensis</span></td>
+          <td><span class="style2">kerti</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">hortorum</span></td>
+          <td><span class="style2">kerti változat</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">hortulanum</span></td>
+          <td><span class="style2">kertészeti</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">houstonianum</span></td>
+          <td><span class="style2">Houston-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">humilis</span></td>
+          <td><span class="style2">alacsony</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">hupehensis</span></td>
+          <td><span class="style2">hupehi (Kína)</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">hybrida/-um, /-us</span></td>
+          <td><span class="style2">keresztezett, nemesített</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">imperialis</span></td>
+          <td><span class="style2">birodalmi, óriás</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">incana</span></td>
+          <td><span class="style2">fehéredõ</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">incomparabilis</span></td>
+          <td><span class="style2">összehasonlíthatatlan</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">intermedia</span></td>
+          <td><span class="style2">középsõ, átmeneti</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">ionantha</span></td>
+          <td><span class="style2">lilás, ibolyaszínû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">jackmanii</span></td>
+          <td><span class="style2">Jackmann-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">jamesonii</span></td>
+          <td><span class="style2">Jameson-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">japonica/-um/-us</span></td>
+          <td><span class="style2">japán</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">julianae</span></td>
+          <td><span class="style2">Júlia- féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">lactiflora</span></td>
+          <td><span class="style2">tejfehér virágú</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">laevigata</span></td>
+          <td><span class="style2">fényes</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">lanata/-um, /-us</span></td>
+          <td><span class="style2">gyapjas</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">lancifolia/ -um</span></td>
+          <td><span class="style2">lándzsalevelû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">latifolia </span></td>
+          <td><span class="style2">széleslevelû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">laurocerasus</span></td>
+          <td><span class="style2">babérmeggy</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">lawsoniana</span></td>
+          <td><span class="style2">Lawson-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">leucanthemum</span></td>
+          <td><span class="style2">fehérvirágú</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">lilio-asphodelus</span></td>
+          <td><span class="style2">a liliom és egy õsi görög növénynév (aszfodelosz) együttese</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">lindenii</span></td>
+          <td><span class="style2">Linden-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">lizei</span></td>
+          <td><span class="style2">Lizé Frére, francia kertész, a hibrid elõállítója</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">lutea/-um/-us</span></td>
+          <td><span class="style2">sárga</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">lyrata</span></td>
+          <td><span class="style2">lant alakú</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">macrocarpa</span></td>
+          <td><span class="style2">nagytermésû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">macrophylla</span></td>
+          <td><span class="style2">nagylevelû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">maculata</span></td>
+          <td><span class="style2">foltos, pettyes</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">majalis</span></td>
+          <td><span class="style2">májusi</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">major</span></td>
+          <td><span class="style2">nagy</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">majus</span></td>
+          <td><span class="style2">nagyobb</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">malacoides</span></td>
+          <td><span class="style2">puhaszõrû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">marginata</span></td>
+          <td><span class="style2">szegélyezett</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">mas</span></td>
+          <td><span class="style2">hím, erõs</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">maxima/ -um</span></td>
+          <td><span class="style2">igen nagy, legnagyobb</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">medium</span></td>
+          <td><span class="style2">középsõ, közepes</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">menziesi</span></td>
+          <td><span class="style2">Menziesi-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">microphylla</span></td>
+          <td><span class="style2">aprólevelû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">millefolium</span></td>
+          <td><span class="style2">ezerlevelû, soklevelû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">miniata</span></td>
+          <td><span class="style2">kisebb</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">minima</span></td>
+          <td><span class="style2">nagyon kicsi</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">minor</span></td>
+          <td><span class="style2">kisebb, kimagaslik</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">missouriensis</span></td>
+          <td><span class="style2">Missouri folyó vidéki</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">modestum</span></td>
+          <td><span class="style2">szerény, alkalmazkodó</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">monogyna</span></td>
+          <td><span class="style2">egybibés</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">monstrosum</span></td>
+          <td><span class="style2">alaktalan, különleges</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">moschata</span></td>
+          <td><span class="style2">pézsmaillatú</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">mugo</span></td>
+          <td><span class="style2">svájci vagy olasz földrajzi név</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">myrsinites</span></td>
+          <td><span class="style2">'régi latin növénynév'</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">neglectum</span></td>
+          <td><span class="style2">elhanyagolt</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">negundo</span></td>
+          <td><span class="style2">régi latin növénynév</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">nidus</span></td>
+          <td><span class="style2">fészek</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">nigra</span></td>
+          <td><span class="style2">fekete</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">nivalis</span></td>
+          <td><span class="style2">havasi, hófehér</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">nordmanniana</span></td>
+          <td><span class="style2">Nordmann-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">novae-angliae</span></td>
+          <td><span class="style2">új-angol</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">novi-belgii</span></td>
+          <td><span class="style2">új-belga</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">nudiflorum</span></td>
+          <td><span class="style2">csupasz virágú</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">obconica</span></td>
+          <td><span class="style2">fordított kúp alakú</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">obtusifolia</span></td>
+          <td><span class="style2">tompalevelû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">occidentalis</span></td>
+          <td><span class="style2">nyugati</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">odorata/-us</span></td>
+          <td><span class="style2">illatos</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">officinalis</span></td>
+          <td><span class="style2">orvosi, gyógyító</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">oleander</span></td>
+          <td><span class="style2">olajfához hasonló (levelû)</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">opulus</span></td>
+          <td><span class="style2">hógolyószerû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">orbiculatus</span></td>
+          <td><span class="style2">kerek</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">orientale/ -is</span></td>
+          <td><span class="style2">keleti</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">ornus</span></td>
+          <td><span class="style2">virágos, díszes</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">ovalifolium</span></td>
+          <td><span class="style2">tojásdad levelû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">oxyacantha</span></td>
+          <td><span class="style2">hegyes tövisû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">palmatum</span></td>
+          <td><span class="style2">pálmaszerû, tenyérszerû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">palustris</span></td>
+          <td><span class="style2">mocsári</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">paniculata</span></td>
+          <td><span class="style2">bugás</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">patula</span></td>
+          <td><span class="style2">alacsony, kissé felálló</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">peltatum</span></td>
+          <td><span class="style2">pajzsos</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">pendula</span></td>
+          <td><span class="style2">függõ, csüngõ</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">pepo</span></td>
+          <td><span class="style2">töktermés</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">perennis</span></td>
+          <td><span class="style2">évelõ</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">persica/ -um</span></td>
+          <td><span class="style2">perzsiai</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">petiolare</span></td>
+          <td><span class="style2">kocsányos</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">petraea</span></td>
+          <td><span class="style2">köves</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">phalaneopsis</span></td>
+          <td><span class="style2">éjjelilepke-szerû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">picta</span></td>
+          <td><span class="style2">tarka, foltos, festett</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">pileata</span></td>
+          <td><span class="style2">kalapos, süveges</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">plantaginea</span></td>
+          <td><span class="style2">útifûszerû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">platanoides</span></td>
+          <td><span class="style2">platánszerû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">platyphyllos</span></td>
+          <td><span class="style2">széles levelû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">plumarius</span></td>
+          <td><span class="style2">tollas</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">plumosa/ -us</span></td>
+          <td><span class="style2">tollas</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">podophyllum</span></td>
+          <td><span class="style2">láblevelû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">poeticus</span></td>
+          <td><span class="style2">költõi</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">polyantha</span></td>
+          <td><span class="style2">sokvirágú, bõven virágzó</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">polychroma</span></td>
+          <td><span class="style2">sokszínû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">polyphyllus</span></td>
+          <td><span class="style2">soklevelû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">pseudacorus</span></td>
+          <td><span class="style2">álkálmos, kálmoshoz hasonló</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">pseudoacacia</span></td>
+          <td><span class="style2">álakácia</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">pseudonarcissus</span></td>
+          <td><span class="style2">álnárcisz</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">pseudoplatanus</span></td>
+          <td><span class="style2">álplatán</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">pseudoscaber</span></td>
+          <td><span class="style2">ál (nem igazán) érdes</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">pulchella/pulcherrima</span></td>
+          <td><span class="style2">szép, pompás, gyönyörû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">pumila</span></td>
+          <td><span class="style2">törpe növésû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">pungens</span></td>
+          <td><span class="style2">szúróslevelû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">purpurea</span></td>
+          <td><span class="style2">bíborvörös</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">quinquefolia</span></td>
+          <td><span class="style2">ötlevelû, ötlevélkés</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">racemosa/ -um</span></td>
+          <td><span class="style2">fürtös</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">radicans</span></td>
+          <td><span class="style2">kapaszkodó, legyökeresedõ</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">recurvata</span></td>
+          <td><span class="style2">visszahajló</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">reflexum</span></td>
+          <td><span class="style2">visszagörbített</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">refracta</span></td>
+          <td><span class="style2">visszatört</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">regale</span></td>
+          <td><span class="style2">királyi, fejedelmi</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">reginae</span></td>
+          <td><span class="style2">királynõi</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">reptans</span></td>
+          <td><span class="style2">kúszó, kapaszkodó</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">rex</span></td>
+          <td><span class="style2">király</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">rhombifolia</span></td>
+          <td><span class="style2">rombusz alakú levelû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">rhytidophyllum</span></td>
+          <td><span class="style2">ráncos levelû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">rigens</span></td>
+          <td><span class="style2">merevedõ</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">rigida</span></td>
+          <td><span class="style2">merev, rideg, kemény</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">robur</span></td>
+          <td><span class="style2">erõs, szilárd</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">rubra</span></td>
+          <td><span class="style2">vörös-szõrös</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">rugosa</span></td>
+          <td><span class="style2">ráncos</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">ruppelii</span></td>
+          <td><span class="style2">Ruppel-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">sabina</span></td>
+          <td><span class="style2">szabin</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">saccharinum</span></td>
+          <td><span class="style2">cukros</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">sanguinea/-um/-us</span></td>
+          <td><span class="style2">vérvörös</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">saxatile /-is</span></td>
+          <td><span class="style2">sziklák között élõ, sziklát kedvelõ</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">scabra</span></td>
+          <td><span class="style2">érdes, durva</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">scandens</span></td>
+          <td><span class="style2">felkúszó, felkapaszkodó</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">scoparia</span></td>
+          <td><span class="style2">seprûszerû, seprûs</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">scutellarioides</span></td>
+          <td><span class="style2">csészeszerû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">semperflorens</span></td>
+          <td><span class="style2">folytonvirágzó</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">sempervirens</span></td>
+          <td><span class="style2">örökzöld</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">serpens</span></td>
+          <td><span class="style2">kígyózó</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">serrulata</span></td>
+          <td><span class="style2">kissé fûrészes</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">setaceum/ -s</span></td>
+          <td><span class="style2">sörteszerû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">sibirica</span></td>
+          <td><span class="style2">szibériai</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">simonii</span></td>
+          <td><span class="style2">Simon-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">sinensis</span></td>
+          <td><span class="style2">kínai</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">sinuatum</span></td>
+          <td><span class="style2">öblös, kiöblösödõ</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">soulangiana</span></td>
+          <td><span class="style2">Soulang-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">speciosa/ -us</span></td>
+          <td><span class="style2">különleges</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">spectabile</span></td>
+          <td><span class="style2">tekintélyes</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">splendens</span></td>
+          <td><span class="style2">fénylõ, csillogó, ragyogó</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">sprengeri</span></td>
+          <td><span class="style2">Sprenger-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">spurium</span></td>
+          <td><span class="style2">hamis, ál, látszólagos</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">strobus</span></td>
+          <td><span class="style2">toboz</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">subulata</span></td>
+          <td><span class="style2">áralakú</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">suffruticosa</span></td>
+          <td><span class="style2">félcserje alakú</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">superba/ -um</span></td>
+          <td><span class="style2">fenséges, pompás, kíváló</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">suspensa</span></td>
+          <td><span class="style2">függõ, csüngõ</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">sylvatica</span></td>
+          <td><span class="style2">erdei</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">sylvestris</span></td>
+          <td><span class="style2">erdei</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">syriacus</span></td>
+          <td><span class="style2">szíriai</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">tatarica/um</span></td>
+          <td><span class="style2">tatár</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">tectorum</span></td>
+          <td><span class="style2">háztetõn tenyészõ</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">tellmanniana</span></td>
+          <td><span class="style2">Tellmann-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">tenerum</span></td>
+          <td><span class="style2">gyenge, finom</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">terminalis</span></td>
+          <td><span class="style2">csúcsi, végállású</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">tetrandra</span></td>
+          <td><span class="style2">négyporzójú</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">thunbergii</span></td>
+          <td><span class="style2">Thunberg-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">tigrinum</span></td>
+          <td><span class="style2">tigrismintájú</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">tomentosa/ -um</span></td>
+          <td><span class="style2">molyhos</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">treubii</span></td>
+          <td><span class="style2">Treubi-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">triacanthos</span></td>
+          <td><span class="style2">háromtövisû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">tricolor</span></td>
+          <td><span class="style2">háromszínû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">tricuspidata</span></td>
+          <td><span class="style2">háromhegyû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">trifasciata</span></td>
+          <td><span class="style2">háromszalagú</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">triloba</span></td>
+          <td><span class="style2">háromkaréjú</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">truncata</span></td>
+          <td><span class="style2">megcsonkított</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">tuberhybrida</span></td>
+          <td><span class="style2">gumóshibrid</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">tulipifera</span></td>
+          <td><span class="style2">tulipánszerû</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">umbellatus</span></td>
+          <td><span class="style2">ernyõs</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">vanhouttei</span></td>
+          <td><span class="style2">Vanhoutte-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">variegatum</span></td>
+          <td><span class="style2">sokféle, változatos</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">veitchii</span></td>
+          <td><span class="style2">Veitch-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">vernus</span></td>
+          <td><span class="style2">tavaszi</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">verrucosa</span></td>
+          <td><span class="style2">szemölcsös, bibircsókos</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">villosum</span></td>
+          <td><span class="style2">bozontos, szõrös</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">virginiana</span></td>
+          <td><span class="style2">virginiai</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">vulgare/ -is</span></td>
+          <td><span class="style2">közönséges</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">walleriana</span></td>
+          <td><span class="style2">Waller-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">wallichiana</span></td>
+          <td><span class="style2">Wallich-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">wittrockiana</span></td>
+          <td><span class="style2">Wittrock-féle</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">zebrina</span></td>
+          <td><span class="style2">csíkos</span></td>
+        </tr>
+        <tr height="21">
+          <td height="21"><span class="style2">zonatus</span></td>
+          <td><span class="style2">övezett, övszerû</span></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<!-- InstanceEndEditable --></div>
+<img src="../images/kszi.gif" alt="logo" width="120" height="82">
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="undefined"><!-- InstanceBegin template="/Templates/sablon.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<SCRIPT LANGUAGE="JavaScript1.1">
+<!--
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+<script src="../../script.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Kiegészítõ berendezések, eszközök</title>
+<!-- InstanceEndEditable -->
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+<!--
+.style1 {font-size: medium}
+-->
+</style>
+<!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+a:link {
+	text-decoration: none;
+	color: #FF0000;
+}
+a:visited {
+	text-decoration: none;
+	color: #FF0000;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+#Layer1 {
+	position:absolute;
+	width:335px;
+	height:480px;
+	z-index:1;
+	left: 240px;
+	top: 130px;
+}
+#Layer2 {
+	position:absolute;
+	width:338px;
+	height:487px;
+	z-index:1;
+	overflow: visible;
+}
+-->
+</style></head>
+<body bgcolor="#FFFFFF" onLoad="MM_preloadImages('../../images/nyitolap_2.gif','../../images/alapismeretek_2.gif','../../images/lagyszaruak_2.gif','../../images/fasszaruak_2.gif','../../images/novenyhaziak_2.gif','../../images/tablazatok_2.gif','../../images/nevmutatok_2.gif','../../images/fogalomtar_2.gif','../../images/onellenorzes_2.gif','../../images/kilepes_2.gif','../../images/vissza_2.gif')">
+<div class="menu_layer" id="menu">
+  <table border="0" cellpadding="0" cellspacing="10" background="../../images/menuback.jpg">
+    <tr>
+      <td><a href="../../nyitolap.html" target="_top" onClick="MM_nbGroup('down','group1','nyitolap','../../images/nyitolap_2.gif',1)" onMouseOver="MM_nbGroup('over','nyitolap','../../images/nyitolap_2.gif','../../images/nyitolap_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="nyitolap" src="../../images/nyitolap_1.gif" border="0" alt="Nyitólap" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="alapismeretek.html" target="_top" onClick="MM_nbGroup('down','group1','Alapismeretek','../../images/alapismeretek_2.gif',1)" onMouseOver="MM_nbGroup('over','Alapismeretek','../../images/alapismeretek_2.gif','../../images/alapismeretek_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img src="../../images/alapismeretek_1.gif" alt="alapismeretek" name="Alapismeretek" border="0" onload=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../lagyszaruak/lagyszaruak.html" target="_top" onClick="MM_nbGroup('down','group1','lagyszaruak','../../images/lagyszaruak_2.gif',1)" onMouseOver="MM_nbGroup('over','lagyszaruak','../../images/lagyszaruak_2.gif','../../images/lagyszaruak_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="lagyszaruak" src="../../images/lagyszaruak_1.gif" border="0" alt="Lágyszárúak" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../fasszaruak/fasszaruak.html" target="_top" onClick="MM_nbGroup('down','group1','fasszaruak','../../images/fasszaruak_2.gif',1)" onMouseOver="MM_nbGroup('over','fasszaruak','../../images/fasszaruak_2.gif','../../images/fasszaruak_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="fasszaruak" src="../../images/fasszaruak_1.gif" border="0" alt="Fásszárúak" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../novenyhaziak/novenyhaziak.html" target="_top" onClick="MM_nbGroup('down','group1','novenyhaziak','../../images/novenyhaziak_2.gif',1)" onMouseOver="MM_nbGroup('over','novenyhaziak','../../images/novenyhaziak_2.gif','../../images/novenyhaziak_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="novenyhaziak" src="../../images/novenyhaziak_1.gif" border="0" alt="Nyövényháziak" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../tablazatok/tablazatok.html" target="_top" onClick="MM_nbGroup('down','group1','tablazatok','../../images/tablazatok_2.gif',1)" onMouseOver="MM_nbGroup('over','tablazatok','../../images/tablazatok_2.gif','../../images/tablazatok_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="tablazatok" src="../../images/tablazatok_1.gif" border="0" alt="Táblázatok" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../nevmutato/nevmutato.html" target="_top" onClick="MM_nbGroup('down','group1','nevmutatok','../../images/nevmutatok_2.gif',1)" onMouseOver="MM_nbGroup('over','nevmutatok','../../images/nevmutatok_2.gif','../../images/nevmutatok_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="nevmutatok" src="../../images/nevmutatok_1.gif" border="0" alt="Névmutatók" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../fogalomtar.html" target="_top" onClick="MM_nbGroup('down','group1','fogalomtar','../../images/fogalomtar_2.gif',1)" onMouseOver="MM_nbGroup('over','fogalomtar','../../images/fogalomtar_2.gif','../../images/fogalomtar_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="fogalomtar" src="../../images/fogalomtar_1.gif" border="0" alt="Fogalomtár" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../../teszt/onellenorzes.html" target="_top" onClick="MM_nbGroup('down','group1','onellenorzes','../../images/onellenorzes_2.gif',1)" onMouseOver="MM_nbGroup('over','onellenorzes','../../images/onellenorzes_2.gif','../../images/onellenorzes_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="onellenorzes" src="../../images/onellenorzes_1.gif" border="0" alt="Önellenõrzés" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="javascript:window.close()" target="_top" onClick="MM_nbGroup('down','group1','kilepes','../../images/kilepes_2.gif',1)" onMouseOver="MM_nbGroup('over','kilepes','../../images/kilepes_2.gif','../../images/kilepes_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="kilepes" src="../../images/kilepes_1.gif" border="0" alt="" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="javascript:history.go(-1)" target="_top" onClick="MM_nbGroup('down','group1','vissza','../../images/vissza_2.gif',1)" onMouseOver="MM_nbGroup('over','vissza','../../images/vissza_2.gif','../../images/vissza_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="vissza" src="../../images/vissza_1.gif" border="0" alt="vissza" onLoad=""></a></td>
+    </tr>
+  </table>
+</div>
+<div class="top_layer" id="top">
+  <div align="center"><img src="../../images/fejlec.jpg" alt="fejlec" width="781" height="79"></div>
+</div>
+<div class="text_layer" id="text" scrolling="no"><!-- InstanceBeginEditable name="text" -->
+<h1 align="center">
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+  <!--  		@page { size: 21cm 29.7cm; margin: 2cm }  		P { margin-bottom: 0.21cm }  	-->
+<strong>Kieg&eacute;sz&iacute;tõ  berendez&eacute;sek, eszk&ouml;z&ouml;k</strong></h1>
+<p align="center">
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><!--  		@page { size: 21cm 29.7cm; margin: 2cm }  		P { margin-bottom: 0.21cm }  	-->
+</p>
+<p align="center">&nbsp;</p>
+<p ALIGN="JUSTIFY" class="style1">A kieg&eacute;sz&iacute;tõ  berendez&eacute;sek a termeszt&eacute;si folyamat egyes r&eacute;szeiben  t&ouml;ltenek be fontos szerepet, azonban n&eacute;lk&uuml;l&uuml;k  az &aacute;rutermel&eacute;s nem val&oacute;sulhatna meg.</p>
+<UL>
+  <LI class="style1">
+    <p ALIGN="JUSTIFY"><strong><a href="javascript:opwin('../../alapismeretek/infrastruktura.jpg')">Infrastrukt&uacute;ra</a>:</strong> az &uuml;zem &uacute;t- &eacute;s k&ouml;zmûh&aacute;l&oacute;zata  	(v&iacute;z-, elektromos stb. h&aacute;l&oacute;zatok), valamint a  	szoci&aacute;lis l&eacute;tes&iacute;tm&eacute;nyek (&ouml;lt&ouml;zõk,  	mosd&oacute;k stb.).</p>
+  <LI class="style1">
+    <p ALIGN="JUSTIFY"><strong><a href="javascript:opwin('../../alapismeretek/raktarak tarolok.JPG')">Rakt&aacute;rak,  	t&aacute;rol&oacute;k</a>:</strong> melyek a felhaszn&aacute;lt  	anyagok &eacute;s eszk&ouml;z&ouml;k t&aacute;rol&aacute;s&aacute;ra  	szolg&aacute;lnak, valamint a k&eacute;sz&aacute;ruk &uuml;zemen  	bel&uuml;li hosszabb-r&ouml;videbb ideig t&ouml;rt&eacute;nõ  	megõrz&eacute;s&eacute;t szolg&aacute;lj&aacute;k (vegyszer-,  	szersz&aacute;m-, cser&eacute;p-, f&ouml;ldrakt&aacute;rak,  	hûtõt&aacute;rol&oacute;k stb.)</p>
+  <LI class="style1">
+    <p ALIGN="JUSTIFY"><strong><a href="javascript:opwin('../../alapismeretek/csarnok munkaterem.jpg')">Csarnokok,  	munkatermek</a>:</strong> az egyes munkafolyamatok idõj&aacute;r&aacute;st&oacute;l  	f&uuml;ggetlen, fedett helyen t&ouml;rt&eacute;nõ v&eacute;gz&eacute;s&eacute;t  	(&uuml;ltet&eacute;s, szapor&iacute;t&aacute;s, v&aacute;logat&aacute;s,  	oszt&aacute;lyoz&aacute;s, k&eacute;sz&aacute;ru feldolgoz&aacute;sa,  	csomagol&aacute;sa) teszik lehetõv&eacute;.</p>
+  <LI class="style1">
+    <p ALIGN="JUSTIFY"><strong><a href="javascript:opwin('../../alapismeretek/szallitoeszkozok.JPG')">Sz&aacute;ll&iacute;t&oacute;eszk&ouml;z&ouml;k</a>:</strong> a telepen bel&uuml;li sz&aacute;ll&iacute;t&oacute;eszk&ouml;z&ouml;k  	az &aacute;ruk &eacute;s anyagok helyi mozgat&aacute;s&aacute;t  	szolg&aacute;lj&aacute;k, (targonc&aacute;k, k&eacute;zikocsik,  	sz&aacute;ll&iacute;t&oacute;p&aacute;ly&aacute;k &eacute;s  	sz&aacute;ll&iacute;t&oacute;szalagok, rakod&oacute;g&eacute;pek  	stb.) A korszerû anyagmozgat&aacute;st sz&eacute;tszerelhetõ,  	g&ouml;rgõs kont&eacute;nerrel (CC-kont&eacute;ner) v&eacute;gezz&uuml;k,  	melynek m&eacute;rete az eur&oacute;pai szabv&aacute;nyhoz igazodik,  	&iacute;gy a kamionokban, teheraut&oacute;kban a holtterek  	minim&aacute;lisra cs&ouml;kkenthetõk, valamint a rakod&aacute;si  	idõ ler&ouml;vid&iacute;thetõ.</p>
+  <LI>
+    <p ALIGN="JUSTIFY" class="style1"><strong><a href="javascript:opwin('../../alapismeretek/munkagepek.jpg')">Munkag&eacute;pek</a>:</strong> a munkamûveletek g&eacute;pes&iacute;t&eacute;s&eacute;t &aacute;ltal&aacute;nos  	&eacute;s speci&aacute;lis munkag&eacute;pek teszik lehetõv&eacute;  	(cserepezõ, t&aacute;pkocka-gy&aacute;rt&oacute;, szemenk&eacute;nt-vetõ  	g&eacute;pek stb.)</p>
+</UL>
+<!-- InstanceEndEditable --></div>
+<img src="../../images/kszi.gif" alt="logo" width="120" height="82">
+</body>
+<!-- InstanceEnd --></html>

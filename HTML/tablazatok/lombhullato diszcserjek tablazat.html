@@ -1,0 +1,526 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="undefined"><!-- InstanceBegin template="/Templates/sablon.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<SCRIPT LANGUAGE="JavaScript1.1">
+<!--
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+<script src="../../script.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Lombhullató díszcserjék</title>
+<!-- InstanceEndEditable -->
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+a:link {
+	text-decoration: none;
+	color: #FF0000;
+}
+a:visited {
+	text-decoration: none;
+	color: #FF0000;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+#Layer1 {
+	position:absolute;
+	width:335px;
+	height:480px;
+	z-index:1;
+	left: 240px;
+	top: 130px;
+}
+#Layer2 {
+	position:absolute;
+	width:338px;
+	height:487px;
+	z-index:1;
+	overflow: visible;
+}
+-->
+</style></head>
+<body bgcolor="#FFFFFF" onLoad="MM_preloadImages('../../images/nyitolap_2.gif','../../images/alapismeretek_2.gif','../../images/lagyszaruak_2.gif','../../images/fasszaruak_2.gif','../../images/novenyhaziak_2.gif','../../images/tablazatok_2.gif','../../images/nevmutatok_2.gif','../../images/fogalomtar_2.gif','../../images/onellenorzes_2.gif','../../images/kilepes_2.gif','../../images/vissza_2.gif')">
+<div class="menu_layer" id="menu">
+  <table border="0" cellpadding="0" cellspacing="10" background="../../images/menuback.jpg">
+    <tr>
+      <td><a href="../../nyitolap.html" target="_top" onClick="MM_nbGroup('down','group1','nyitolap','../../images/nyitolap_2.gif',1)" onMouseOver="MM_nbGroup('over','nyitolap','../../images/nyitolap_2.gif','../../images/nyitolap_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="nyitolap" src="../../images/nyitolap_1.gif" border="0" alt="Nyitólap" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../alapismeretek/alapismeretek.html" target="_top" onClick="MM_nbGroup('down','group1','Alapismeretek','../../images/alapismeretek_2.gif',1)" onMouseOver="MM_nbGroup('over','Alapismeretek','../../images/alapismeretek_2.gif','../../images/alapismeretek_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img src="../../images/alapismeretek_1.gif" alt="alapismeretek" name="Alapismeretek" border="0" onload=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../lagyszaruak/lagyszaruak.html" target="_top" onClick="MM_nbGroup('down','group1','lagyszaruak','../../images/lagyszaruak_2.gif',1)" onMouseOver="MM_nbGroup('over','lagyszaruak','../../images/lagyszaruak_2.gif','../../images/lagyszaruak_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="lagyszaruak" src="../../images/lagyszaruak_1.gif" border="0" alt="Lágyszárúak" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../fasszaruak/fasszaruak.html" target="_top" onClick="MM_nbGroup('down','group1','fasszaruak','../../images/fasszaruak_2.gif',1)" onMouseOver="MM_nbGroup('over','fasszaruak','../../images/fasszaruak_2.gif','../../images/fasszaruak_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="fasszaruak" src="../../images/fasszaruak_1.gif" border="0" alt="Fásszárúak" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../novenyhaziak/novenyhaziak.html" target="_top" onClick="MM_nbGroup('down','group1','novenyhaziak','../../images/novenyhaziak_2.gif',1)" onMouseOver="MM_nbGroup('over','novenyhaziak','../../images/novenyhaziak_2.gif','../../images/novenyhaziak_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="novenyhaziak" src="../../images/novenyhaziak_1.gif" border="0" alt="Nyövényháziak" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="tablazatok.html" target="_top" onClick="MM_nbGroup('down','group1','tablazatok','../../images/tablazatok_2.gif',1)" onMouseOver="MM_nbGroup('over','tablazatok','../../images/tablazatok_2.gif','../../images/tablazatok_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="tablazatok" src="../../images/tablazatok_1.gif" border="0" alt="Táblázatok" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../nevmutato/nevmutato.html" target="_top" onClick="MM_nbGroup('down','group1','nevmutatok','../../images/nevmutatok_2.gif',1)" onMouseOver="MM_nbGroup('over','nevmutatok','../../images/nevmutatok_2.gif','../../images/nevmutatok_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="nevmutatok" src="../../images/nevmutatok_1.gif" border="0" alt="Névmutatók" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../fogalomtar.html" target="_top" onClick="MM_nbGroup('down','group1','fogalomtar','../../images/fogalomtar_2.gif',1)" onMouseOver="MM_nbGroup('over','fogalomtar','../../images/fogalomtar_2.gif','../../images/fogalomtar_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="fogalomtar" src="../../images/fogalomtar_1.gif" border="0" alt="Fogalomtár" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../../teszt/onellenorzes.html" target="_top" onClick="MM_nbGroup('down','group1','onellenorzes','../../images/onellenorzes_2.gif',1)" onMouseOver="MM_nbGroup('over','onellenorzes','../../images/onellenorzes_2.gif','../../images/onellenorzes_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="onellenorzes" src="../../images/onellenorzes_1.gif" border="0" alt="Önellenõrzés" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="javascript:window.close()" target="_top" onClick="MM_nbGroup('down','group1','kilepes','../../images/kilepes_2.gif',1)" onMouseOver="MM_nbGroup('over','kilepes','../../images/kilepes_2.gif','../../images/kilepes_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="kilepes" src="../../images/kilepes_1.gif" border="0" alt="" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="javascript:history.go(-1)" target="_top" onClick="MM_nbGroup('down','group1','vissza','../../images/vissza_2.gif',1)" onMouseOver="MM_nbGroup('over','vissza','../../images/vissza_2.gif','../../images/vissza_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="vissza" src="../../images/vissza_1.gif" border="0" alt="vissza" onLoad=""></a></td>
+    </tr>
+  </table>
+</div>
+<div class="top_layer" id="top">
+  <div align="center"><img src="../../images/fejlec.jpg" alt="fejlec" width="781" height="79"></div>
+</div>
+<div class="text_layer" id="text" scrolling="no"><!-- InstanceBeginEditable name="text" -->
+<table width="729" border="0" cellpadding="0" cellspacing="0">
+  <!--DWLayoutTable-->
+  
+  <tr>
+    <td width="729" height="37" valign="top"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><!--  		@page { size: 21cm 29.7cm; margin: 2cm }  		P { margin-bottom: 0.21cm }  	-->
+    <h1 ALIGN="center">Lombhullató díszcserjék </h1></td>
+  </tr>
+  <tr>
+    <td height="450" align="center" valign="top"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+      <p align="justify">
+        <!--  		@page { size: 21cm 29.7cm; margin: 2cm }  		P { margin-bottom: 0.21cm }  	-->
+    </p>
+      <table border="1" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="133" valign="top"><h3 align="center">Név</h3></td>
+          <td width="92" valign="top"><h3 align="center">Díszítõérték</h3></td>
+          <td width="82" valign="top"><h3 align="center">Virágzási idõ</h3></td>
+          <td width="94" valign="top"><h3 align="center">Igény</h3></td>
+          <td width="103" valign="top"><h3 align="center">Felhasználás</h3></td>
+          <td width="110" valign="top"><h3 align="center">Szaporítás</h3></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Amorpha fruticosa    – cserjés gyalogakác</p></td>
+          <td width="92" valign="top"><p align="center">Lila virágzat</p></td>
+          <td width="82" valign="top"><p align="center">Június-augusztus</p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    szárazság-tûrõ</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    rézsûre, sövény, virágkötészet</p></td>
+          <td width="110" valign="top"><p align="center">Dugványozás, magvetés</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Berberis thunbergii    – japán borbolya</p></td>
+          <td width="92" valign="top"><p align="center">Sárga virág, piros    termés, lombozat</p></td>
+          <td width="82" valign="top"><p align="center">Május </p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    közepes vízigényû</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    sziklakertbe, rézsûre, edénybe, szoliter, sövény</p></td>
+          <td width="110" valign="top"><p align="center">Magvetés,    dugványozás<br>
+            Megjegyzés: mészkedvelõ</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Berberis vulgaris    – közönséges borbolya, sóskaborbolya</p></td>
+          <td width="92" valign="top"><p align="center">Sárga virág, piros    termés, lombozat</p></td>
+          <td width="82" valign="top"><p align="center">Május </p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    szárazság-tûrõ</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    sövény</p></td>
+          <td width="110" valign="top"><p align="center">Magvetés,    dugványozás Megjegyzés: honos faj</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Buddleia davidii    – illatos nyáriorgona</p></td>
+          <td width="92" valign="top"><p align="center">Lila, fehér,    rózsaszín virág</p></td>
+          <td width="82" valign="top"><p align="center">Július-szeptember</p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    vízigényes</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    szoliter</p></td>
+          <td width="110" valign="top"><p align="center">Dugványozás <br>
+            Megjegyzés:    félcserje</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Caragana    arborescens – sárga borsófa</p></td>
+          <td width="92" valign="top"><p align="center">Sárga virág</p></td>
+          <td width="82" valign="top"><p align="center">Május </p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    szárazság-tûrõ</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    szoliter, védõsövény</p></td>
+          <td width="110" valign="top"><p align="center">Magvetés, oltás<br>
+            Megjegyzés:    mészkedvelõ</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Chaenomeles    speciosa – japánbirs, skarlátvörös díszbirs</p></td>
+          <td width="92" valign="top"><p align="center">Rózsaszín, piros,    fehér virág, sárga termés</p></td>
+          <td width="82" valign="top"><p align="center">Március-április</p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    közepes vízigényû</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    szoliter, virágkötészet</p></td>
+          <td width="110" valign="top"><p align="center">Dugványozás, oltás</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Cornus alba – fehér som</p></td>
+          <td width="92" valign="top"><p align="center">Fehér virág, fehér    termés, vörös vesszõ</p></td>
+          <td width="82" valign="top"><p align="center">Május-június</p></td>
+          <td width="94" valign="top"><p align="center">Közepes fény- és    vízigény</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    szoliter, virágkötészet</p></td>
+          <td width="110" valign="top"><p align="center">Dugványozás,    magvetés</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Cornus mas – húsos    som</p></td>
+          <td width="92" valign="top"><p align="center">Sárga virág, piros,    ehetõ termés</p></td>
+          <td width="82" valign="top"><p align="center">Február-április</p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    szárazság-tûrõ</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    szoliter, sövény, virágkötészet</p></td>
+          <td width="110" valign="top"><p align="center">Megvetés<br>
+            Megjegyzés:    honos faj, mészkedvelõ</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Cornus sanguinea    – veresgyûrûsom</p></td>
+          <td width="92" valign="top"><p align="center">Fehér virág, fekete    termés, õszi lombszín</p></td>
+          <td width="82" valign="top"><p align="center">Május-június</p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    szárazság-tûrõ</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    rézsûre, szoliter</p></td>
+          <td width="110" valign="top"><p align="center">Magvetés,    dugványozás<br>
+            Megjegyzés:    mészkedvelõ</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Corylus avellana    – erdei mogyoró</p></td>
+          <td width="92" valign="top"><p align="center">Barka virágzat,    habitus, ehetõ termés</p></td>
+          <td width="82" valign="top"><p align="center">Február-március</p></td>
+          <td width="94" valign="top"><p align="center">Közepes fény- és    vízigény</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    szoliter, sövény, virágkötészet</p></td>
+          <td width="110" valign="top">Magvetés, bujtás, dugványozás, oltás
+            <p align="center">Megjegyzés:    honos faj, </p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Cotinus coggygria    – cserszömörce</p></td>
+          <td width="92" valign="top"><p align="center">Szõrös termés, õszi    lombszín</p></td>
+          <td width="82" valign="top"><p align="center">Június </p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    szárazság-tûrõ</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    sziklakertbe, szoliter, virágkötészet</p></td>
+          <td width="110" valign="top"><p align="center">Magvetés,    dugványozás<br>
+            Megjegyzés:    honos faj, gyógynövény</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Cotoneaster    horizontalis – kerti madárbirs</p></td>
+          <td width="92" valign="top"><p align="center">Fehér virág, piros    termés</p></td>
+          <td width="82" valign="top"><p align="center">Június </p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    közepes vízigényû</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    sziklakertbe, rézsûre, edénybe, szoliter, virágkötészet</p></td>
+          <td width="110" valign="top"><p align="center">Magvetés,    dugványozás<br>
+            Megjegyzés:    várostûrõ</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Crataegus laevigata    – csere-galagonya, kétbibés galagonya</p></td>
+          <td width="92" valign="top"><p align="center">Fehér, rózsaszín    virág, piros termés</p></td>
+          <td width="82" valign="top"><p align="center">Május-június</p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    közepes vízigényû</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    faként utcasorfa</p></td>
+          <td width="110" valign="top"><p align="center">Magvetés, szemzés<br>
+            Megjegyzés:    honos faj, gyógynövény</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Crataegus monogyna    – egybibés galagonya</p></td>
+          <td width="92" valign="top"><p align="center">Fehér virág, piros    termés</p></td>
+          <td width="82" valign="top"><p align="center">Május-június</p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    szárazság-tûrõ</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    sövény, virágkötészet</p></td>
+          <td width="110" valign="top"><p align="center">Magvetés, szemzés<br>
+            Megjegyzés:    honos faj, gyógynövény</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Deutzia scabra    – érdeslevelû gyöngyvirágcserje</p></td>
+          <td width="92" valign="top"><p align="center">Fehér virág</p></td>
+          <td width="82" valign="top"><p align="center">Június-július</p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    közepes vízigényû</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    szoliter, sövény</p></td>
+          <td width="110" valign="top"><p align="center">Dugványozás </p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Euonymus europaeus    – csíkos kecskerágó</p></td>
+          <td width="92" valign="top"><p align="center">„Papsapka” termés</p></td>
+          <td width="82" valign="top"><p align="center">Május </p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    közepes vízigényû</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    szoliter, virágkötészet</p></td>
+          <td width="110" valign="top"><p align="center">Magvetés<br>
+            Megjegyzés:    honos faj, várostûrõ</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Forsythia x    intermedia – hibrid aranycserje</p></td>
+          <td width="92" valign="top"><p align="center">Sárga virág</p></td>
+          <td width="82" valign="top"><p align="center">Március-április</p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    közepes vízigényû</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    edénybe, szoliter, sövény, virágkötészet</p></td>
+          <td width="110" valign="top"><p align="center">Dugványozás <br>
+            Megjegyzés:    várostûrõ</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Hibiscus syriacus    – kerti mályvacserje, hibiszkusz</p></td>
+          <td width="92" valign="top"><p align="center">Rózsaszín, lila,    fehér virág</p></td>
+          <td width="82" valign="top"><p align="center">Július-szeptember</p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    közepes vízigényû</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    edénybe, szoliter, sövény</p></td>
+          <td width="110" valign="top"><p align="center">Magvetés,    dugványozás, oltás, szemzés</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Jasminum nudiflorum – téli jázmin</p></td>
+          <td width="92" valign="top"><p align="center">Sárga virág, zöld    vesszõ</p></td>
+          <td width="82" valign="top"><p align="center">Február- március</p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    szárazság-tûrõ</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    rézsûre, edénybe, szoliter, virágkötészet</p></td>
+          <td width="110" valign="top"><p align="center">Magvetés, tõosztás,    dugványozás, bujtás</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Kerria japonica    – teltvirágú boglárkacserje</p></td>
+          <td width="92" valign="top"><p align="center">Sárga virág, zöld    vesszõ</p></td>
+          <td width="82" valign="top"><p align="center">Április-május</p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    szárazság-tûrõ</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    szoliter</p></td>
+          <td width="110" valign="top"><p align="center">Dugványozás, sarj<br>
+            Megjegyzés: kétlaki    növény</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Laburnum    anagyroides – közönséges aranyesõ, sárgaakác</p></td>
+          <td width="92" valign="top"><p align="center">Sárga virág</p></td>
+          <td width="82" valign="top"><p align="center">Május-június</p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    szárazság-tûrõ</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    szoliter</p></td>
+          <td width="110" valign="top"><p align="center">Magvetés,    dugványozás<br>
+            Megjegyzés:    mészkedvelõ, mérgezõ növény</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Ligustrum    ovalifolium – széleslevelû fagyal</p></td>
+          <td width="92" valign="top"><p align="center">Fehér virág, fekete    termés, lombozat</p></td>
+          <td width="82" valign="top"><p align="center">Július </p></td>
+          <td width="94" valign="top"><p align="center">Közepes fény- és    vízigényû</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    szoliter, sövény, virágkötészet</p></td>
+          <td width="110" valign="top"><p align="center">Dugványozás </p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Ligustrum vulgare    – közönséges fagyal</p></td>
+          <td width="92" valign="top"><p align="center">Fehér virág, fekete    termés, lombozat</p></td>
+          <td width="82" valign="top"><p align="center">Június-július</p></td>
+          <td width="94" valign="top"><p align="center">Közepes fény- és    vízigényû</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    rézsûre, edénybe, szoliter, virágkötészet</p></td>
+          <td width="110" valign="top"><p align="center">Dugványozás,    magvetés<br>
+            Megjegyzés:    honos faj, várostûrõ</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Lonicera    fragrantissima – illatos lonc</p></td>
+          <td width="92" valign="top"><p align="center">Fehér illatos    virág, piros termés</p></td>
+          <td width="82" valign="top"><p align="center">Február-március</p></td>
+          <td width="94" valign="top"><p align="center">Közepes fény- és    vízigényû</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    szoliter</p></td>
+          <td width="110" valign="top"><p align="center">Magvetés,    dugványozás<br>
+            Megjegyzés:    várostûrõ</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Lonicera tatarica –    tatárlonc</p></td>
+          <td width="92" valign="top"><p align="center">Fehér, rózsaszín    virág, piros termés</p></td>
+          <td width="82" valign="top"><p align="center">Május-június</p></td>
+          <td width="94" valign="top"><p align="center">Közepes fény- és    vízigényû</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    szoliter</p></td>
+          <td width="110" valign="top"><p align="center">Magvetés,    dugványozás<br>
+            Megjegyzés:    várostûrõ</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Magnolia x    soulangiana – nagyvirágú liliomfa</p></td>
+          <td width="92" valign="top"><p align="center">Rózsaszín virág</p></td>
+          <td width="82" valign="top"><p align="center">Április-május</p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    közepes vízigényû</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    szoliter</p></td>
+          <td width="110" valign="top"><p align="center">Magvetés </p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Paeonia suffruticosa – fás babarózsa</p></td>
+          <td width="92" valign="top"><p align="center">Fehér, rózsaszín,    piros virág</p></td>
+          <td width="82" valign="top"><p align="center">Május </p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    közepes vízigényû</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    szoliter</p></td>
+          <td width="110" valign="top"><p align="center">Magvetés, oltás</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Philadelphus    coronarius – pompás jezsámen</p></td>
+          <td width="92" valign="top"><p align="center">Fehér, illatos    virág</p></td>
+          <td width="82" valign="top"><p align="center">Május-június</p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes, közepes    vízigényû</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    szoliter, sövény</p></td>
+          <td width="110" valign="top"><p align="center">Dugványozás <br>
+            Megjegyzés:    mésztûrõ, várostûrõ növény</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Prunus triloba    – rózsamandula, babarózsa</p></td>
+          <td width="92" valign="top"><p align="center">Rózsaszín virág</p></td>
+          <td width="82" valign="top"><p align="center">Április-május</p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    közepes vízigényû</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    szoliter</p></td>
+          <td width="110" valign="top"><p align="center">Szemzés </p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Rosa canina –    vadrózsa, gyepûrózsa</p></td>
+          <td width="92" valign="top"><p align="center">Rózsaszín virág,    piros termés</p></td>
+          <td width="82" valign="top"><p align="center">Június </p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    szárazság-tûrõ</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    alany, sövény, virágkötészet</p></td>
+          <td width="110" valign="top"><p align="center">Magvetés<br>
+            Megjegyzés:    honos faj, gyógynövény</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Rosa rugosa    –japán rózsa, ráncoslevelû rózsa</p></td>
+          <td width="92" valign="top"><p align="center">Lilás-rózsaszín    virág, piros termés</p></td>
+          <td width="82" valign="top"><p align="center">Június-augusztus</p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    szárazság-tûrõ</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    sövény, takarócserje</p></td>
+          <td width="110" valign="top"><p align="center">Magvetés<br>
+            Megjegyzés:    mészérzékeny</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Sambucus nigra    – fekete bodza, gyepûbodza</p></td>
+          <td width="92" valign="top"><p align="center">Fehér, illatos    virág, fekete termés</p></td>
+          <td width="82" valign="top"><p align="center">Június-július</p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    szárazság-tûrõ</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba</p></td>
+          <td width="110" valign="top"><p align="center">Magvetés,    dugványozás<br>
+            Megjegyzés:    honos faj </p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Spiraea x    vanhouttei – kerti gyöngyvesszõ</p></td>
+          <td width="92" valign="top"><p align="center">Fehér virág</p></td>
+          <td width="82" valign="top"><p align="center">Május </p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    szárazság-tûrõ</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    szoliter, sövény, virágkötészet</p></td>
+          <td width="110" valign="top"><p align="center">Dugványozás, bujtás<br>
+            Megjegyzés:    várostûrõ</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Symphoricarpos    albus – keleti hóbogyó</p></td>
+          <td width="92" valign="top"><p align="center">Fehér virág, fehér    termés</p></td>
+          <td width="82" valign="top"><p align="center">Június-szeptember</p></td>
+          <td width="94" valign="top"><p align="center">Közepes fényigényû,    szárazság-tûrõ</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    sövény, virágkötészet</p></td>
+          <td width="110" valign="top"><p align="center">Magvetés,    dugványozás</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Symphoricarpos    orbiculatus – piros bogyóslonc</p></td>
+          <td width="92" valign="top"><p align="center">Rózsaszín, fehér    virág, lilás-piros termés, õszi lombszín</p></td>
+          <td width="82" valign="top"><p align="center">Július-augusztus</p></td>
+          <td width="94" valign="top"><p align="center">Közepes fényigényû,    szárazság-tûrõ</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba</p></td>
+          <td width="110" valign="top"><p align="center">Magvetés,    dugványozás</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Syringa x chinensis    – kínai orgona</p></td>
+          <td width="92" valign="top"><p align="center">Lilás-rózsaszín,    illatos virág</p></td>
+          <td width="82" valign="top"><p align="center">Május </p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    közepes vízigényû</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    szoliter, virágkötészet</p></td>
+          <td width="110" valign="top"><p align="center">Dugványozás, bujtás</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Syringa vulgaris – kerti    orgona</p></td>
+          <td width="92" valign="top"><p align="center">Lila, fehér,    lilás-piros virág</p></td>
+          <td width="82" valign="top"><p align="center">Május </p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    közepes vízigényû</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    szoliter, sövény, virágkötészet</p></td>
+          <td width="110" valign="top"><p align="center">Magvetés,    dugványozás, bujtás, sarj, szemzés</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Tamarix gallica – francia tamariska</p></td>
+          <td width="92" valign="top"><p align="center">Rózsaszín virág,    lombozat</p></td>
+          <td width="82" valign="top"><p align="center">Június-augusztus</p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    szárazság-tûrõ</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    szoliter, sövény, virágkötészet</p></td>
+          <td width="110" valign="top"><p align="center">Dugványozás</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Tamarix tetrandra –    keleti-tamariska, korai tamariska</p></td>
+          <td width="92" valign="top"><p align="center">Rózsaszín virág,    lombozat</p></td>
+          <td width="82" valign="top"><p align="center">Április-május</p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    szárazság-tûrõ</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    szoliter, sövény, virágkötészet</p></td>
+          <td width="110" valign="top"><p align="center">Dugványozás </p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Viburnum lantana    – ostorménfa, ostorménbangita</p></td>
+          <td width="92" valign="top"><p align="center">Fehér virág, vörös,    majd fekete termés</p></td>
+          <td width="82" valign="top"><p align="center">Május-június</p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    szárazság-tûrõ</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    szoliter</p></td>
+          <td width="110" valign="top"><p align="center">Magvetés<br>
+            Megjegyzés:    honos faj, mészkedvelõ</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Viburnum opulus – kányabangita</p></td>
+          <td width="92" valign="top"><p align="center">Fehér virág, piros    termés, õszi lombszín</p></td>
+          <td width="82" valign="top"><p align="center">Május-június</p></td>
+          <td width="94" valign="top"><p align="center">Árnyéktûrõ,    vízigényes</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    szoliter</p></td>
+          <td width="110" valign="top"><p align="center">Magvetés, bujtás,    dugványozás<br>
+            Megjegyzés:    honos faj</p></td>
+        </tr>
+        <tr>
+          <td width="133" valign="top"><p>Weigela florida    – kerti rózsalonc</p></td>
+          <td width="92" valign="top"><p align="center">Rózsaszín virág</p></td>
+          <td width="82" valign="top"><p align="center">Május-június</p></td>
+          <td width="94" valign="top"><p align="center">Fényigényes,    közepes vízigényû</p></td>
+          <td width="103" valign="top"><p align="center">Kiültetés parkba,    szoliter</p></td>
+          <td width="110" valign="top"><p align="center">Dugványozás </p></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<!-- InstanceEndEditable --></div>
+<img src="../../images/kszi.gif" alt="logo" width="120" height="82">
+</body>
+<!-- InstanceEnd --></html>

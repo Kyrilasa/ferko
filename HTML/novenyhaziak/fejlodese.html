@@ -1,0 +1,201 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="undefined"><!-- InstanceBegin template="/Templates/sablon.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<SCRIPT LANGUAGE="JavaScript1.1">
+<!--
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+<script src="../../script.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>A növényházi dísznövények fejlõdése</title>
+<!-- InstanceEndEditable -->
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+<!--
+.style1 {font-size: medium}
+-->
+</style>
+<!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+a:link {
+	text-decoration: none;
+	color: #FF0000;
+}
+a:visited {
+	text-decoration: none;
+	color: #FF0000;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+#Layer1 {
+	position:absolute;
+	width:335px;
+	height:480px;
+	z-index:1;
+	left: 240px;
+	top: 130px;
+}
+#Layer2 {
+	position:absolute;
+	width:338px;
+	height:487px;
+	z-index:1;
+	overflow: visible;
+}
+-->
+</style></head>
+<body bgcolor="#FFFFFF" onLoad="MM_preloadImages('../../images/nyitolap_2.gif','../../images/alapismeretek_2.gif','../../images/lagyszaruak_2.gif','../../images/fasszaruak_2.gif','../../images/novenyhaziak_2.gif','../../images/tablazatok_2.gif','../../images/nevmutatok_2.gif','../../images/fogalomtar_2.gif','../../images/onellenorzes_2.gif','../../images/kilepes_2.gif','../../images/vissza_2.gif')">
+<div class="menu_layer" id="menu">
+  <table border="0" cellpadding="0" cellspacing="10" background="../../images/menuback.jpg">
+    <tr>
+      <td><a href="../../nyitolap.html" target="_top" onClick="MM_nbGroup('down','group1','nyitolap','../../images/nyitolap_2.gif',1)" onMouseOver="MM_nbGroup('over','nyitolap','../../images/nyitolap_2.gif','../../images/nyitolap_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="nyitolap" src="../../images/nyitolap_1.gif" border="0" alt="Nyitólap" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../alapismeretek/alapismeretek.html" target="_top" onClick="MM_nbGroup('down','group1','Alapismeretek','../../images/alapismeretek_2.gif',1)" onMouseOver="MM_nbGroup('over','Alapismeretek','../../images/alapismeretek_2.gif','../../images/alapismeretek_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img src="../../images/alapismeretek_1.gif" alt="alapismeretek" name="Alapismeretek" border="0" onload=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../lagyszaruak/lagyszaruak.html" target="_top" onClick="MM_nbGroup('down','group1','lagyszaruak','../../images/lagyszaruak_2.gif',1)" onMouseOver="MM_nbGroup('over','lagyszaruak','../../images/lagyszaruak_2.gif','../../images/lagyszaruak_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="lagyszaruak" src="../../images/lagyszaruak_1.gif" border="0" alt="Lágyszárúak" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../fasszaruak/fasszaruak.html" target="_top" onClick="MM_nbGroup('down','group1','fasszaruak','../../images/fasszaruak_2.gif',1)" onMouseOver="MM_nbGroup('over','fasszaruak','../../images/fasszaruak_2.gif','../../images/fasszaruak_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="fasszaruak" src="../../images/fasszaruak_1.gif" border="0" alt="Fásszárúak" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="novenyhaziak.html" target="_top" onClick="MM_nbGroup('down','group1','novenyhaziak','../../images/novenyhaziak_2.gif',1)" onMouseOver="MM_nbGroup('over','novenyhaziak','../../images/novenyhaziak_2.gif','../../images/novenyhaziak_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="novenyhaziak" src="../../images/novenyhaziak_1.gif" border="0" alt="Nyövényháziak" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../tablazatok/tablazatok.html" target="_top" onClick="MM_nbGroup('down','group1','tablazatok','../../images/tablazatok_2.gif',1)" onMouseOver="MM_nbGroup('over','tablazatok','../../images/tablazatok_2.gif','../../images/tablazatok_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="tablazatok" src="../../images/tablazatok_1.gif" border="0" alt="Táblázatok" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../nevmutato/nevmutato.html" target="_top" onClick="MM_nbGroup('down','group1','nevmutatok','../../images/nevmutatok_2.gif',1)" onMouseOver="MM_nbGroup('over','nevmutatok','../../images/nevmutatok_2.gif','../../images/nevmutatok_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="nevmutatok" src="../../images/nevmutatok_1.gif" border="0" alt="Névmutatók" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../fogalomtar.html" target="_top" onClick="MM_nbGroup('down','group1','fogalomtar','../../images/fogalomtar_2.gif',1)" onMouseOver="MM_nbGroup('over','fogalomtar','../../images/fogalomtar_2.gif','../../images/fogalomtar_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="fogalomtar" src="../../images/fogalomtar_1.gif" border="0" alt="Fogalomtár" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../../teszt/onellenorzes.html" target="_top" onClick="MM_nbGroup('down','group1','onellenorzes','../../images/onellenorzes_2.gif',1)" onMouseOver="MM_nbGroup('over','onellenorzes','../../images/onellenorzes_2.gif','../../images/onellenorzes_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="onellenorzes" src="../../images/onellenorzes_1.gif" border="0" alt="Önellenõrzés" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="javascript:window.close()" target="_top" onClick="MM_nbGroup('down','group1','kilepes','../../images/kilepes_2.gif',1)" onMouseOver="MM_nbGroup('over','kilepes','../../images/kilepes_2.gif','../../images/kilepes_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="kilepes" src="../../images/kilepes_1.gif" border="0" alt="" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="javascript:history.go(-1)" target="_top" onClick="MM_nbGroup('down','group1','vissza','../../images/vissza_2.gif',1)" onMouseOver="MM_nbGroup('over','vissza','../../images/vissza_2.gif','../../images/vissza_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="vissza" src="../../images/vissza_1.gif" border="0" alt="vissza" onLoad=""></a></td>
+    </tr>
+  </table>
+</div>
+<div class="top_layer" id="top">
+  <div align="center"><img src="../../images/fejlec.jpg" alt="fejlec" width="781" height="79"></div>
+</div>
+<div class="text_layer" id="text" scrolling="no"><!-- InstanceBeginEditable name="text" -->
+<table width="729" border="0" cellpadding="0" cellspacing="0">
+  <!--DWLayoutTable-->
+  
+  <tr>
+    <td width="729" height="52" valign="top"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><!--  		@page { size: 21cm 29.7cm; margin: 2cm }  		P { margin-bottom: 0.21cm }  	-->
+    <h1 ALIGN="center">A növényházi dísznövények fejlõdése</h1></td>
+  </tr>
+  <tr>
+    <td height="450" align="center" valign="top"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+      <p align="justify"><span class="style1"><strong>A növényházi dísznövények fejlõdése:</strong><br>
+        A különbözõ növényházi  dísznövények <strong>fejlõdési szakaszai</strong> – a kezdeti növekedési (fiatalkori,  vegetatív vagy juvenilis) és az ezt követõ ivaros (fejlett, vagyis idõskori,  virágzási, azaz generatív vagy reproduktív) életszakaszok – elkülönülésük  mértékében, idõtartamukban, kiváltó okaikban nagyon eltérhetnek egymástól.</span></p>
+      <div align="justify" class="style1">
+        <ul>
+          <li>A vegetatív növekedés és a virágfejlesztés egyes  esetekben egyidejû is lehet. (pl. Anthurium, Strelitzia, stb.).</li>
+          <li>A vegetatív növekedés és virágképzés egymást követi  (pl. Nerium, stb.).</li>
+          <li>A növekedést jelentõ hajtásképzés és a virágfejlesztés  váltakozhat is egymással (pl. Lilium, stb.).</li>
+          <li>Meghatározott növekedés esetében a hajtás egyetlen  virággal vagy virágzattal záródik. Az esetleges magképzés után el is hal (pl. Pericallis  cruenta, Calceolaria herbeohybrida, stb.).</li>
+          <li>Életben tartó lehet viszont az esetenkénti  továbbfejlõdést biztosító, többnyire földben levõ, szártövi elhelyezkedésû egy  vagy több rügy. (Ilyen van a gumós virágokon, valamint a Cymbidiumon és más  szinpodiális orchideákon.)</li>
+          <li>A törpenövés, illetve a törpeszártagúság öröklõdõ  formáiban néha elõnyös Pl. egyes cserepes kultúrákban kisebb helyigényû és  tetszetõsebb forma jön létre (dondo típusok nemesítése).</li>
+        </ul>
+      </div>
+      <p align="justify" class="style1">A különleges<strong> növekedési típusok</strong>  megjelenési formájukkal (habitusukkal) is díszíthetnek. Ilyenek lehetnek a  csüngõ (pendula), a szalagosodott (fasciata), gömbös (globosa), az oszlopos  (pyramidalis, illetve fastigiata), stb. formák, valamint a különleges  kialakulású, és öröklõdésû levélformák szeldelt (laciniata), a nagyobb méretû  (macrophylla). Valamint a virágalakbeli (hasogatott sziromvég, csavart vagy  csöves szirom, telt virág) változatok. A kellõ nagyságú méret is virágzási  elõfeltétel lehet.</p>
+      <p align="justify" class="style1">Elõfordulhat, hogy a növények  alsóbb részei még <strong>fiatalkori </strong>– juvenilis – szakaszban lehetnek, amikor a felsõ  részek már <strong>érettkori</strong> jelleget öltenek (Hedera). Ez válthatja ki az egyazon  növény eltérõ korú hajtásrészeinek kihajtó- és gyökérfejlesztõ képességében  tapasztalható különbségeket. Ezt számításba is kell venni visszavágáskor,  illetve virágszedéskor és a hajtásdugványok letermelésekor. Általános érvényû  az is, hogy a fiatalkori állapotú növényekrõl származó dugványok az  idõskoriaknál könnyebben, jobban gyökeresednek. Bizonyos kor elérésével a  gyökeresedési képesség nagymértékben csökken, esetleg gyakorlatilag meg is  szûnik.</p>
+      <p align="justify" class="style1">A <strong>levélalak- és levélméret-változás</strong>  (heteroblasztikus fejlõdés) jelensége a dísznövényeken meglehetõsen gyakori. A  csíranövényen fejlõdött elsõdleges (primer) lomblevelek rendszerint kisebbek,  mint a késõbbiek (magról nevelt fikusz). A mélyebben tagolt vagy összetett  levelû fajok elsõdleges levelei pedig általában sokkal egyszerûbbek, mint a  késõbb kialakuló és egyre inkább tagolt levelek (pálmák).</p>
+      <p align="justify" class="style1">A fiatalkori szakasz <strong>idõtartama</strong>  a lágyszárúaknál is legalább néhány nap, de inkább több hét vagy hónap. A  cserjetermetû fásodó szárúaknál már egy év, és sok más fás növényen több  évtized elõzheti meg a virágzást.<br>
+        Virágzásra érett minden olyan  növény, amely túljutott fiatalkori fejlõdési szakaszán, és virágfejlesztésre  képessé vált.</p>
+      <p align="justify" class="style1">A fiatalkori növekedési  szakaszból a fejlettkori reproduktív szakaszba való átmenethez <strong>kedvezõ  külsõ</strong> <strong>körülmények</strong> is szükségesek. Kiváltó belsõ okai a növekedési <strong>hormonok</strong>  (auxinok, gibberellinek, citokininek) szintbeli vagy egyensúly-, illetve  arányváltozásai.<br>
+        A változó klímájú terülteken élõ  növények a kedvezõtlen évszakot többnyire kitartószervek segítségével, nyugalmi  állapotban vészelik át. A vegetációs szakaszban azonban ismét növekednek és  virágoznak.<br>
+        A virágzás indukciója –  elõidézése – tehát a tenyészõcsúcs vagy a növény átállása virágképzésre.  Idõpontját pedig különbözõ módon befolyásolják a környezeti körülmények,  adottságok.</p>
+      <p align="justify" class="style1">A <strong>fotoperiodizmus</strong>, vagyis a  nappalhosszúság, illetve a fény és sötét váltakozása a növekedési és fejlõdési  folyamatokra, fõképpen a virágképzésre hat szabályozólag. Független a virágzási  idõpont a környezeti feltételektõl akkor, ha nem meghatározott tenyészviszonyok  irányítják, hanem elsõsorban a szaporítás idõpontja. Ez esetben tehát akkor  következik be a virágzás, ha a növekedésben a külsõ körülmények kedvezõek, és  kialakul a kellõ növénynagyság.</p>
+      <div align="justify" class="style1">
+        <ul>
+          <li>A fakultatív rövidnappalosak virágzását a nappalok  rövidülése serkenti. A nem éppen megfelelõ nappali idõtartamon is virágoznak,  bár vontatottabban.</li>
+          <li>A fakultatív hosszúnappalosak virágzását a nappal  hosszabbodása serkenti, s ugyancsak vontatottabban, de szintén virágoznak nem  megfelelõ nappali idõtartamon is.</li>
+          <li>Az obligát rövidnappalosak kizárólag akkor képesek  átváltani virágzásra, ha a nappalok hossza a számukra megfelelõ kritikus érték  alatt marad.</li>
+          <li>Az obligát hosszúnappalosak csak olyankor válthatnak át  virágképzésre, ha a nappalok hossza a számukra kritikus idõtartamot meghaladja. </li>
+          <li>A nappalhosszúság tekintetében egyes növények kettõs  igényûek is lehetnek. A hosszú-rövidnappalosak az elõször hosszúnappalos, majd  a virágzásukhoz rövidnappalos körülményeket kívánók, a rövid-hosszúnappalosak  az elõször rövidnappalos, késõbb hosszúnappalos megvilágítási igényûek</li>
+        </ul>
+      </div>
+      <p align="justify" class="style1">
+        <!--  		@page { size: 21cm 29.7cm; margin: 2cm }  		P { margin-bottom: 0.21cm }  	-->
+    A <strong>fotoperiodikus reakcióidõ</strong>  fajtára is jellemzõ értéke a bimbókezdemény kialakulásától a már teljes  virágzásig szükséges idõtartam, hetekben. A reakcióidõ hossza a fényerõsségtõl  is függ, mégpedig az állománysûrûséggel és a lombfelülettel összefüggésben.  Emiatt a téli hónapokban, valamint az egymást már jelentõsen árnyékoló  lombfejlettségû, szûk térállású növényállományokban hosszabbodhat, és fordítva.  A bimbóképzés kezdetén különösen fontos a kellõ fényintenzitás. A hõmérséklet e  tekintetben is befolyásoló hatású.</p>
+      <div align="justify" class="style1">
+        <ul>
+          <li>A korszerû gazdaságos  dísznövénytermesztés elengedhetetlen <strong>feltételei</strong> a növények igényeinek  maximális kielégítése mellett:</li>
+          <li>a növekedésszabályozással elõállított ún. kompakt  növekedés;</li>
+          <li>a folyamatos szelekcióval elért egyöntetûség (egyforma,  homogén áru); </li>
+          <li>valamint a virágzók idõzítése</li>
+        </ul>
+        <p>&nbsp;</p>
+      </div>      </td>
+  </tr>
+</table>
+<!-- InstanceEndEditable --></div>
+<img src="../../images/kszi.gif" alt="logo" width="120" height="82">
+</body>
+<!-- InstanceEnd --></html>

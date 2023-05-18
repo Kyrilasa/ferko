@@ -1,0 +1,187 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="undefined"><!-- InstanceBegin template="/Templates/sablon.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<SCRIPT LANGUAGE="JavaScript1.1">
+<!--
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+<script src="../../script.js">
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>A névadás szabályai</title>
+<!-- InstanceEndEditable -->
+<link href="../../style.css" rel="stylesheet" type="text/css">
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+<!--
+.style1 {font-size: medium}
+-->
+</style>
+<!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+a:link {
+	text-decoration: none;
+	color: #FF0000;
+}
+a:visited {
+	text-decoration: none;
+	color: #FF0000;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+#Layer1 {
+	position:absolute;
+	width:335px;
+	height:480px;
+	z-index:1;
+	left: 240px;
+	top: 130px;
+}
+#Layer2 {
+	position:absolute;
+	width:338px;
+	height:487px;
+	z-index:1;
+	overflow: visible;
+}
+-->
+</style></head>
+<body bgcolor="#FFFFFF" onLoad="MM_preloadImages('../../images/nyitolap_2.gif','../../images/alapismeretek_2.gif','../../images/lagyszaruak_2.gif','../../images/fasszaruak_2.gif','../../images/novenyhaziak_2.gif','../../images/tablazatok_2.gif','../../images/nevmutatok_2.gif','../../images/fogalomtar_2.gif','../../images/onellenorzes_2.gif','../../images/kilepes_2.gif','../../images/vissza_2.gif')">
+<div class="menu_layer" id="menu">
+  <table border="0" cellpadding="0" cellspacing="10" background="../../images/menuback.jpg">
+    <tr>
+      <td><a href="../../nyitolap.html" target="_top" onClick="MM_nbGroup('down','group1','nyitolap','../../images/nyitolap_2.gif',1)" onMouseOver="MM_nbGroup('over','nyitolap','../../images/nyitolap_2.gif','../../images/nyitolap_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="nyitolap" src="../../images/nyitolap_1.gif" border="0" alt="Nyitólap" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="alapismeretek.html" target="_top" onClick="MM_nbGroup('down','group1','Alapismeretek','../../images/alapismeretek_2.gif',1)" onMouseOver="MM_nbGroup('over','Alapismeretek','../../images/alapismeretek_2.gif','../../images/alapismeretek_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img src="../../images/alapismeretek_1.gif" alt="alapismeretek" name="Alapismeretek" border="0" onload=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../lagyszaruak/lagyszaruak.html" target="_top" onClick="MM_nbGroup('down','group1','lagyszaruak','../../images/lagyszaruak_2.gif',1)" onMouseOver="MM_nbGroup('over','lagyszaruak','../../images/lagyszaruak_2.gif','../../images/lagyszaruak_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="lagyszaruak" src="../../images/lagyszaruak_1.gif" border="0" alt="Lágyszárúak" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../fasszaruak/fasszaruak.html" target="_top" onClick="MM_nbGroup('down','group1','fasszaruak','../../images/fasszaruak_2.gif',1)" onMouseOver="MM_nbGroup('over','fasszaruak','../../images/fasszaruak_2.gif','../../images/fasszaruak_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="fasszaruak" src="../../images/fasszaruak_1.gif" border="0" alt="Fásszárúak" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../novenyhaziak/novenyhaziak.html" target="_top" onClick="MM_nbGroup('down','group1','novenyhaziak','../../images/novenyhaziak_2.gif',1)" onMouseOver="MM_nbGroup('over','novenyhaziak','../../images/novenyhaziak_2.gif','../../images/novenyhaziak_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="novenyhaziak" src="../../images/novenyhaziak_1.gif" border="0" alt="Nyövényháziak" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../tablazatok/tablazatok.html" target="_top" onClick="MM_nbGroup('down','group1','tablazatok','../../images/tablazatok_2.gif',1)" onMouseOver="MM_nbGroup('over','tablazatok','../../images/tablazatok_2.gif','../../images/tablazatok_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="tablazatok" src="../../images/tablazatok_1.gif" border="0" alt="Táblázatok" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../nevmutato/nevmutato.html" target="_top" onClick="MM_nbGroup('down','group1','nevmutatok','../../images/nevmutatok_2.gif',1)" onMouseOver="MM_nbGroup('over','nevmutatok','../../images/nevmutatok_2.gif','../../images/nevmutatok_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="nevmutatok" src="../../images/nevmutatok_1.gif" border="0" alt="Névmutatók" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../fogalomtar.html" target="_top" onClick="MM_nbGroup('down','group1','fogalomtar','../../images/fogalomtar_2.gif',1)" onMouseOver="MM_nbGroup('over','fogalomtar','../../images/fogalomtar_2.gif','../../images/fogalomtar_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="fogalomtar" src="../../images/fogalomtar_1.gif" border="0" alt="Fogalomtár" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="../../teszt/onellenorzes.html" target="_top" onClick="MM_nbGroup('down','group1','onellenorzes','../../images/onellenorzes_2.gif',1)" onMouseOver="MM_nbGroup('over','onellenorzes','../../images/onellenorzes_2.gif','../../images/onellenorzes_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="onellenorzes" src="../../images/onellenorzes_1.gif" border="0" alt="Önellenõrzés" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="javascript:window.close()" target="_top" onClick="MM_nbGroup('down','group1','kilepes','../../images/kilepes_2.gif',1)" onMouseOver="MM_nbGroup('over','kilepes','../../images/kilepes_2.gif','../../images/kilepes_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="kilepes" src="../../images/kilepes_1.gif" border="0" alt="" onLoad=""></a></td>
+    </tr>
+    <tr>
+      <td><a href="javascript:history.go(-1)" target="_top" onClick="MM_nbGroup('down','group1','vissza','../../images/vissza_2.gif',1)" onMouseOver="MM_nbGroup('over','vissza','../../images/vissza_2.gif','../../images/vissza_2.gif',1)" onMouseOut="MM_nbGroup('out')"><img name="vissza" src="../../images/vissza_1.gif" border="0" alt="vissza" onLoad=""></a></td>
+    </tr>
+  </table>
+</div>
+<div class="top_layer" id="top">
+  <div align="center"><img src="../../images/fejlec.jpg" alt="fejlec" width="781" height="79"></div>
+</div>
+<div class="text_layer" id="text" scrolling="no"><!-- InstanceBeginEditable name="text" -->
+<h1 align="center">
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<strong>A n&eacute;vad&aacute;s szab&aacute;lyai</strong></h1>
+<p align="center">&nbsp;</p>
+<p align="justify">
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+  <span class="style1">Eleinte a n&ouml;v&eacute;nyek  tudom&aacute;nyos elnevez&eacute;se t&ouml;bb&eacute;-kev&eacute;sb&eacute;  hossz&uacute; mondatokkal t&ouml;rt&eacute;nt, melyek igyekeztek  felsorolni a faj &ouml;sszes l&eacute;nyeges, jellemzõ  tulajdons&aacute;g&aacute;t. P&eacute;ld&aacute;ul a hazai hegyi  r&eacute;teken is elõfordul&oacute; pr&eacute;mes t&aacute;rnicska  (Gentianella ciliata) latin neve a XVII. sz. elej&eacute;n a  k&ouml;vetkezõ volt:</span></p>
+<p ALIGN="CENTER" class="style1"><strong><em>Gentiana  angustifolia autumnalis minor floribus ad lata pilosis,</em></strong></p>
+<p ALIGN="left" class="style1"><BR>
+vagyis magyarul :</p>
+<p ALIGN="CENTER" class="style1"><strong><em>keskeny levelû,  kicsi, õsszel vir&aacute;gz&oacute;, a vir&aacute;gszirmok sz&eacute;l&eacute;n  rojtos vir&aacute;g&uacute; t&aacute;rnics</em></strong>.</p>
+<p ALIGN="JUSTIFY" class="style1">(A r&eacute;gebben  egys&eacute;ges t&aacute;rnics /Gentiana/ nemzets&eacute;g t&ouml;bb  kisvir&aacute;g&uacute; faj&aacute;t ma k&uuml;l&ouml;n csoportba a  t&aacute;rnicska f&eacute;l&eacute;k /Gentianella/ nemzets&eacute;g&eacute;be  sorolj&aacute;k.) </p>
+<p ALIGN="JUSTIFY" class="style1">Ez az egy p&eacute;lda is  j&oacute;l szeml&eacute;lteti ennek az elnevez&eacute;si m&oacute;dszernek  a tarthatatlans&aacute;g&aacute;t. Az &eacute;lõl&eacute;nyek  elnevez&eacute;s&eacute;nek szab&aacute;lyoz&aacute;s&aacute;ban is  Linn&eacute; teremtett rendet. 1753-ban megjelent &quot;Species  plantarum&quot; c. munk&aacute;j&aacute;nak megjelen&eacute;se &oacute;ta  az eg&eacute;sz vil&aacute;gon betartj&aacute;k az abban r&ouml;gz&iacute;tett  n&eacute;vad&aacute;si szab&aacute;lyokat. </p>
+<p ALIGN="JUSTIFY" class="style1">Minden fajnak<strong> kettõs  latin neve</strong> van. Ez a <strong><em>binominalis nomenklat&uacute;ra</em></strong>,  vagyis a k&eacute;tnevû nevez&eacute;ktan. Az elsõ n&eacute;v a  nemzets&eacute;g neve, a m&aacute;sodik a faj&eacute;. Az elsõ  mindig nagy betûvel kezdõdik, a m&aacute;sodik, vagyis a fajn&eacute;v  &uacute;jabb szab&aacute;lym&oacute;dos&iacute;t&aacute;s alapj&aacute;n  mindig kicsivel. Eleinte olyan szab&aacute;ly volt &eacute;rv&eacute;nyben,  hogy ha a fajn&eacute;v nem tulajdons&aacute;got (pl. feh&eacute;r =  alba, hossz&uacute;levelû = longifolia stb.) jel&ouml;l, hanem az  egy szem&eacute;lyre utal, akkor azt nagy kezdõbetûvel &iacute;rt&aacute;k.  (Pl. Berberis thunbergii kor&aacute;bbi helyes&iacute;r&aacute;ssal  B. Thunbergii, mert a fajn&eacute;v egy sv&eacute;d botanikus - Carl  Peter Thunberg - nev&eacute;re utal. A fajnevek k&ouml;z&uuml;l nagy  kezdõbetûvel &iacute;rt&aacute;k m&eacute;g a r&eacute;gebbi  nemzets&eacute;gneveket (pl. Prunus Cerasus), vagy akkor is, ha azt  szerzõj&uuml;k, (pl. Linn&eacute;) eredetileg nagy betûvel &iacute;rta  (pl. Fraxinus Ornus).</p>
+<p ALIGN="JUSTIFY" class="style1">A tudom&aacute;nyos  n&eacute;vhez felt&eacute;tlen&uuml;l hozz&aacute;tartozik a kettõs  latin n&eacute;v ut&aacute;n annak az egy vagy t&ouml;bb tud&oacute;snak  (&quot;auctor&quot;-nak, szerzõnek) a neve vagy annak r&ouml;vid&iacute;t&eacute;se,  akik azt a n&ouml;v&eacute;nyt elsõk&eacute;nt tudom&aacute;nyosan  le&iacute;rt&aacute;k. K&eacute;t szerzõ eset&eacute;n neveik k&ouml;z&ouml;tt  az 'et' vagyis az '&eacute;s' sz&oacute; &aacute;ll. Min&eacute;l  h&iacute;resebb a kutat&oacute; ann&aacute;l kevesebb betûbõl &aacute;ll&oacute;  r&ouml;vid&iacute;t&eacute;s illeti meg. Az egy betûs r&ouml;vid&iacute;t&eacute;st  - L. - egyed&uuml;l Linn&eacute; &quot;&eacute;rdemelte ki&quot;. </p>
+<p ALIGN="JUSTIFY" class="style1">A csak termeszt&eacute;sbõl  ismert, bizonytalan eredetû fajok neve ut&aacute;n a le&iacute;r&oacute;(k)  neve helyett kor&aacute;bban a hort. r&ouml;vid&iacute;t&eacute;st  haszn&aacute;lt&aacute;k (hortorum = a hortus - kert sz&oacute;  t&ouml;bbes birtokos esetben, vagyis kertek n&ouml;v&eacute;nye). Pl.  Dahlia variabilis hort., Viola tricolor hort. stb.</p>
+<p ALIGN="JUSTIFY" class="style1">A Linn&eacute; &aacute;ltal  kidolgozott nevez&eacute;ktan mindenkire n&eacute;zve ma is k&ouml;telezõ.  Ennek a betart&aacute;sa &oacute;ri&aacute;si elõny&ouml;kkel j&aacute;r.  Nemzetk&ouml;zi meg&eacute;rt&eacute;st tesz lehetõv&eacute;.  K&iacute;s&eacute;relj&uuml;k csak meg b&aacute;rmely nyelvre  leford&iacute;tani valamelyik Magyarorsz&aacute;gon vadon is &eacute;lõ  d&iacute;szn&ouml;v&eacute;ny&uuml;nk - pl. a tavaszi h&eacute;rics,  õszi gerebcsin stb.- nev&eacute;t. De hasonl&oacute;an kudarcba  fulladn&aacute;nk, ha egy n&eacute;met vagy angol n&ouml;v&eacute;nynevet  akarn&aacute;nk sz&oacute;t&aacute;rb&oacute;l meg&eacute;rteni. M&eacute;g  nagyobb neh&eacute;zs&eacute;get jelent azonban az, hogy egy-egy  k&ouml;zismert vadvir&aacute;gnak, pl. a gyermekl&aacute;ncfûnek  k&ouml;zel 40, az elõbb eml&iacute;tett tavaszi h&eacute;ricsnek is  t&ouml;bb mint 10 magyar neve ismert.</p>
+<p ALIGN="JUSTIFY" class="style1">A tudom&aacute;nyos  nevez&eacute;ktani szab&aacute;lyok szigor&uacute; betart&aacute;s&aacute;nak  azonban vannak kellemetlen k&ouml;vetkezm&eacute;nyei is: a gyakori  n&eacute;vv&aacute;ltoz&aacute;sok. A Linn&eacute; &aacute;ltal  alkotott szab&aacute;ly azt is kimondja, hogy minden fajnak az elsõ,  a legkor&aacute;bban adott neve az &eacute;rv&eacute;nyes (<strong><em>priorit&aacute;s  elve</em></strong>). &Iacute;gy, ha egy n&ouml;v&eacute;nyrõl idõvel  kider&uuml;l, hogy azt m&aacute;r kor&aacute;bban m&aacute;s n&eacute;ven  le&iacute;rt&aacute;k, akkor a tov&aacute;bbiakban a szab&aacute;lyok  &eacute;rtelm&eacute;ben azt a nevet kell haszn&aacute;lnunk. A  k&ouml;ztudatban elterjedt, de m&aacute;r elavult r&eacute;gi nevet  (<strong><em>szinonim n&eacute;v</em></strong>) az &uacute;j fajn&eacute;v ut&aacute;n  z&aacute;r&oacute;jelben szokt&aacute;k felt&uuml;ntetni. </p>
+<p ALIGN="JUSTIFY" class="style1"> Az is elõfordulhat, hogy  a tudom&aacute;ny fejlõd&eacute;s&eacute;nek, a vizsg&aacute;lati  m&oacute;dszerek t&ouml;k&eacute;letesebb&eacute; v&aacute;l&aacute;s&aacute;nak  k&ouml;vetkezt&eacute;ben kider&uuml;l, hogy valamely faj <strong><em>rendszertani besorol&aacute;s&aacute;t meg kell v&aacute;ltoztatni</em></strong>.  (Pl. az Alyssum saxatile L. &uacute;jabban m&aacute;s nemzets&eacute;ghez  tartozik, &eacute;rv&eacute;nyes neve: Aurinia saxatilis (L.) Desf..  Ilyenkor az elsõ le&iacute;r&oacute; neve z&aacute;r&oacute;jelbe  ker&uuml;l.)</p>
+<p ALIGN="JUSTIFY" class="style1">A <strong>k&eacute;t faj  keresztezõd&eacute;s&eacute;bõl, keresztez&eacute;s&eacute;bõl  sz&aacute;rmaz&oacute; hibrid</strong> is kettõs nevet kap a fajn&eacute;v  elõtt x jellel. Ut&aacute;na z&aacute;r&oacute;jelben felt&uuml;ntethetõ  a k&eacute;t sz&uuml;lõ faj is:</p>
+<p ALIGN="JUSTIFY" class="style1">Pl.: Platanus x hybrida  (P. orientalis x P. occidentalis)</p>
+<p ALIGN="JUSTIFY" class="style1"> Aesculus x carnea (Ae.  hippocastanum x Ae. pavia)</p>
+<p ALIGN="JUSTIFY" class="style1">A <strong>nemzets&eacute;gek  k&ouml;z&ouml;tti keresztezõd&eacute;sbõl sz&aacute;rmaz&oacute;  n&ouml;v&eacute;nyekn&eacute;l</strong> a x jelz&eacute;s a nemzets&eacute;gn&eacute;v  el&eacute; ker&uuml;l. Pl. X Fatshedera lizei sz&uuml;lõfajai a  Fatsia japonica &eacute;s a Hedera helix.</p>
+<p ALIGN="JUSTIFY" class="style1">Az ugyanahhoz a fajhoz  tartoz&oacute; egyedek v&aacute;ltozatoss&aacute;ga miatt sz&uuml;ks&eacute;g  lehet a <strong>fajn&aacute;l kisebb rendszertani egys&eacute;gek</strong> megk&uuml;l&ouml;nb&ouml;ztet&eacute;s&eacute;re is. &Iacute;gy a  term&eacute;szetes k&ouml;r&uuml;lm&eacute;nyek k&ouml;z&ouml;tt &eacute;lõ  fajok az al&aacute;bbi fontosabb faj alatti egys&eacute;gekre  tagolhat&oacute;k: </p>
+<p ALIGN="JUSTIFY" class="style1"> Faj (species, sp.) </p>
+<p ALIGN="JUSTIFY" class="style1"> <strong>Alfaj</strong> (subspecies, ssp. vagy subsp.)</p>
+<p ALIGN="JUSTIFY" class="style1"> <strong>V&aacute;ltozat</strong> (varietas, var.)</p>
+<p ALIGN="JUSTIFY" class="style1"> <strong>Forma</strong> (forma,  f.)</p>
+<p ALIGN="JUSTIFY" class="style1">A n&ouml;v&eacute;nytermesztõ  sz&aacute;m&aacute;ra &eacute;pp a fajon bel&uuml;li v&aacute;ltozatoss&aacute;g  ad lehetõs&eacute;get arra, hogy a tov&aacute;bbszapor&iacute;t&aacute;shoz  c&eacute;ljainak megfelelõen, bizonyos szempontok, pl. a n&ouml;v&eacute;ny  valamely d&iacute;sz&iacute;tõ &eacute;rt&eacute;kû tulajdons&aacute;ga  szerint v&aacute;logasson.</p>
+<p ALIGN="JUSTIFY" class="style1">A termesztett n&ouml;v&eacute;nyek  faj alatti (fajon bel&uuml;li) rendszertani alapegys&eacute;ge a <strong>fajta </strong>(cultivar - cv.), olyan egyedek csoportja, melyek</p>
+<p class="style1">- a termeszt&eacute;s  szempontj&aacute;b&oacute;l l&eacute;nyeges tulajdons&aacute;gukban  vagy tulajdons&aacute;gaikban megegyeznek,</p>
+<p class="style1">- ezeket a  tulajdons&aacute;gaikat a szapor&iacute;t&aacute;s (ivaros &eacute;s  ivartalan) sor&aacute;n megtartj&aacute;k,</p>
+<p class="style1">- &eacute;s a faj m&aacute;s  egyedeitõl elt&eacute;rnek.</p>
+<p ALIGN="JUSTIFY" class="style1">Elnevez&eacute;s&uuml;k  &uacute;gy t&ouml;rt&eacute;nik, hogy a faj kettõs latin neve ut&aacute;n  vesszõk k&ouml;z&eacute; &iacute;rva, nagy kezdõbetûvel t&uuml;ntetik  fel a fajtanevet, ami &aacute;ltal&aacute;ban nem eredeti latin sz&oacute;,  hanem gyakran valamilyen fant&aacute;zian&eacute;v. A m&aacute;sik -  ritk&aacute;bb - jel&ouml;l&eacute;si m&oacute;d, ha a fajtan&eacute;v  el&eacute; kitessz&uuml;k a cv. r&ouml;vid&iacute;t&eacute;st: Pl.</p>
+<p ALIGN="JUSTIFY" class="style1">Phlox  paniculata 'White Admiral'</p>
+<p ALIGN="JUSTIFY" class="style1">Achillea  filipendulina 'Gold Plate'</p>
+<p ALIGN="JUSTIFY" class="style1">Lolium  perenne cv. Z&ouml;ldike</p>
+<p ALIGN="JUSTIFY" class="style1">Codiaeum  variegatum cv. Puszta</p>
+<p ALIGN="JUSTIFY" class="style1">Tilia  tomentosa cv. Szeleste</p>
+<!-- InstanceEndEditable --></div>
+<img src="../../images/kszi.gif" alt="logo" width="120" height="82">
+</body>
+<!-- InstanceEnd --></html>
